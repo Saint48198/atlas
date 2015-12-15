@@ -1,0 +1,63 @@
+db.countries.insert({
+	"id": 3,
+	"name": "American Samoa",
+	"a2": "AS",
+	"a3": "ASM",
+	"un": 16
+});
+
+db.countries.insert({
+	"id": 4,
+	"name": "Andorra",
+	"a2": "AD",
+	"a3": "AND",
+	"un": 20
+});
+
+db.countries.insert({
+	"id": 5,
+	"name": "Angola",
+	"a2": "AO",
+	"a3": "AGO",
+	"un": 24
+});
+
+db.countries.insert({
+	"id": 6,
+	"name": "Anguilla",
+	"a2": "AI",
+	"a3": "AIA",
+	"un": 660
+});
+
+db.countries.insert({
+	"id": 7,
+	"name": "Antarctica",
+	"a2": "AQ",
+	"a3": "ATA",
+	"un": 10
+});
+
+db.countries.insert({
+	"id": 8,
+	"name": "Antigua and Barbuda",
+	"a2": "AG",
+	"a3": "ATG",
+	"un": 28
+});
+
+db.countries.insert({
+	"id": 9,
+	"name": "Argentina",
+	"a2": "AR",
+	"a3": "ARG",
+	"un": 32
+});
+
+db.countries.insert({
+	"id": 10,
+	"name": "Armenia",
+	"a2": "AM",
+	"a3": "ARM",
+	"un": 51
+});
