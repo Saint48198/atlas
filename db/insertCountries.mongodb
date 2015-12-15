@@ -1,4 +1,30 @@
 db.countries.insert({
+	"id": 0,
+	"name": "Afghanistan",
+	"a2": "AF",
+	"a3": "AFG",
+	"un": 4
+});
+
+db.countries.insert({
+	"id": 1,
+	"name": "Albania",
+	"a2": "AL",
+	"a3": "ALB",
+	"un": 8
+});
+
+db.countries.insert({
+	"id": 2,
+	"name": "Algeria",
+	"a2": "DZ",
+	"a3": "DZA",
+	"un": 12
+});
+
+---------- ccountries already added to db are above this line -------------
+
+db.countries.insert({
 	"id": 3,
 	"name": "American Samoa",
 	"a2": "AS",
@@ -60,4 +86,44 @@ db.countries.insert({
 	"a2": "AM",
 	"a3": "ARM",
 	"un": 51
+});
+
+db.countries.insert({
+	"id": 11,
+	"name": "Aruba",
+	"a2": "AW",
+	"a3": "ABW",
+	"un": 533
+});
+
+db.countries.insert({
+	"id": 12,
+	"name": "Australia",
+	"a2": "AU",
+	"a3": "AUS",
+	"un": 36
+});
+
+db.countries.insert({
+	"id": 13,
+	"name": "Austria",
+	"a2": "AT",
+	"a3": "AUT",
+	"un": 40
+});
+
+db.countries.insert({
+	"id": 14,
+	"name": "Azerbaijan",
+	"a2": "AZ",
+	"a3": "AZE",
+	"un": 31
+});
+
+db.countries.insert({
+	"id": 15,
+	"name": "Bahamas",
+	"a2": "BS",
+	"a3": "BHS",
+	"un": 44
 });
