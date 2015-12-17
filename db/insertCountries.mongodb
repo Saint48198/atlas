@@ -127,3 +127,155 @@ db.countries.insert({
 	"a3": "BHS",
 	"un": 44
 });
+
+db.countries.insert({
+	"id": 16,
+	"name": "Bahrain",
+	"a2": "BH",
+	"a3": "BHR",
+	"un": 48
+});
+
+db.countries.insert({
+	"id": 17,
+	"name": "Bangladesh",
+	"a2": "BD",
+	"a3": "BGD",
+	"un": 50
+});
+
+db.countries.insert({
+	"id": 18,
+	"name": "Barbados",
+	"a2": "BB",
+	"a3": "BRB",
+	"un": 52
+});
+
+db.countries.insert({
+	"id": 19,
+	"name": "Belarus",
+	"a2": "BY",
+	"a3": "BLR",
+	"un": 112
+});
+
+db.countries.insert({
+	"id": 20,
+	"name": "Belgium",
+	"a2": "BE",
+	"a3": "BEL",
+	"un": 56
+});
+
+db.countries.insert({
+	"id": 21,
+	"name": "Belize",
+	"a2": "BZ",
+	"a3": "BLZ",
+	"un": 84
+});
+
+db.countries.insert({
+	"id": 22,
+	"name": "Benin",
+	"a2": "BJ",
+	"a3": "BEN",
+	"un": 204
+});
+
+db.countries.insert({
+	"id": 23,
+	"name": "Bermuda",
+	"a2": "BM",
+	"a3": "BMU",
+	"un": 60
+});
+
+db.countries.insert({
+	"id": 24,
+	"name": "Bhutan",
+	"a2": "BT",
+	"a3": "BTN",
+	"un": 64
+});
+
+db.countries.insert({
+	"id": 25,
+	"name": "Bolivia",
+	"a2": "BO",
+	"a3": "BOL",
+	"un": 68
+});
+
+db.countries.insert({
+	"id": 26,
+	"name": "Bonaire",
+	"a2": "BQ",
+	"a3": "BES",
+	"un": 535
+});
+
+db.countries.insert({
+	"id": 28,
+	"name": "Botswana",
+	"a2": "BW",
+	"a3": "BWA",
+	"un": 72
+});
+
+db.countries.insert({
+	"id": 29,
+	"name": "Bouvet Island",
+	"a2": "BV",
+	"a3": "BVT",
+	"un": 74
+});
+
+db.countries.insert({
+	"id": 30,
+	"name": "Brazil",
+	"a2": "BR",
+	"a3": "BRA",
+	"un": 76
+});
+
+db.countries.insert({
+	"id": 31,
+	"name": "British Indian Ocean Territory",
+	"a2": "IO",
+	"a3": "IOT",
+	"un": 86
+});
+
+db.countries.insert({
+	"id": 32,
+	"name": "Brunei Darussalam",
+	"a2": "BN",
+	"a3": "BRN",
+	"un": 96
+});
+
+db.countries.insert({
+	"id": 33,
+	"name": "Bulgaria",
+	"a2": "BG",
+	"a3": "BGR",
+	"un": 100
+});
+
+db.countries.insert({
+	"id": 34,
+	"name": "Burkina Faso",
+	"a2": "BF",
+	"a3": "BFA",
+	"un": 854
+});
+
+db.countries.insert({
+	"id": 35,
+	"name": "Burundi",
+	"a2": "BI",
+	"a3": "BDI",
+	"un": 108
+});
