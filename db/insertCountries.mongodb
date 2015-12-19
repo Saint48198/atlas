@@ -495,3 +495,59 @@ db.countries.insert({
 	"a3": "DOM",
 	"un": 214
 });
+
+db.countries.insert({
+	"id": 63,
+	"name": "Ecuador",
+	"a2": "EC",
+	"a3": "ECU",
+	"un": 218
+});
+
+db.countries.insert({
+	"id": 64,
+	"name": "Egypt",
+	"a2": "EG",
+	"a3": "EGY",
+	"un": 818
+});
+
+db.countries.insert({
+	"id": 65,
+	"name": "El Salvador",
+	"a2": "SV",
+	"a3": "SLV",
+	"un": 222
+});
+
+db.countries.insert({
+	"id": 66,
+	"name": "Equatorial Guinea",
+	"a2": "GQ",
+	"a3": "GNQ",
+	"un": 226
+});
+
+db.countries.insert({
+	"id": 67,
+	"name": "Eritrea",
+	"a2": "ER",
+	"a3": "ERI",
+	"un": 232
+});
+
+db.countries.insert({
+	"id": 68,
+	"name": "Estonia",
+	"a2": "EE",
+	"a3": "EST",
+	"un": 233
+});
+
+db.countries.insert({
+	"id": 69,
+	"name": "Ethiopia",
+	"a2": "ET",
+	"a3": "ETH",
+	"un": 231
+});
