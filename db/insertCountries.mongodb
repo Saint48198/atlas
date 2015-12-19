@@ -279,3 +279,219 @@ db.countries.insert({
 	"a3": "BDI",
 	"un": 108
 });
+
+db.countries.insert({
+	"id": 36,
+	"name": "Cambodia",
+	"a2": "KH",
+	"a3": "KHM",
+	"un": 116
+});
+
+db.countries.insert({
+	"id": 37,
+	"name": "Cameroon",
+	"a2": "CM",
+	"a3": "CMR",
+	"un": 120
+});
+
+db.countries.insert({
+	"id": 38,
+	"name": "Canada",
+	"a2": "CA",
+	"a3": "CAN",
+	"un": 124
+});
+
+db.countries.insert({
+	"id": 39,
+	"name": "Cape Verde",
+	"a2": "CV",
+	"a3": "CPV",
+	"un": 132
+});
+
+db.countries.insert({
+	"id": 40,
+	"name": "Cayman Islands",
+	"a2": "KY",
+	"a3": "CYM",
+	"un": 136
+});
+
+db.countries.insert({
+	"id": 41,
+	"name": "Central African Republic",
+	"a2": "CF",
+	"a3": "CAF",
+	"un": 140
+});
+
+db.countries.insert({
+	"id": 42,
+	"name": "Chad",
+	"a2": "TD",
+	"a3": "TCD",
+	"un": 148
+});
+
+db.countries.insert({
+	"id": 43,
+	"name": "Chile",
+	"a2": "CL",
+	"a3": "CHL",
+	"un": 152
+});
+
+db.countries.insert({
+	"id": 44,
+	"name": "China",
+	"a2": "CN",
+	"a3": "CHN",
+	"un": 156
+});
+
+db.countries.insert({
+	"id": 45,
+	"name": "Christmas Island",
+	"a2": "CX",
+	"a3": "CXR",
+	"un": 162
+});
+
+db.countries.insert({
+	"id": 46,
+	"name": "Cocos (Keeling) Islands",
+	"a2": "CC",
+	"a3": "CCK",
+	"un": 166
+});
+
+db.countries.insert({
+	"id": 47,
+	"name": "Colombia",
+	"a2": "CO",
+	"a3": "COL",
+	"un": 170
+});
+
+db.countries.insert({
+	"id": 48,
+	"name": "Comoros",
+	"a2": "KM",
+	"a3": "COM",
+	"un": 174
+});
+
+db.countries.insert({
+	"id": 49,
+	"name": "Congo",
+	"a2": "CG",
+	"a3": "COG",
+	"un": 178
+});
+
+db.countries.insert({
+	"id": 50,
+	"name": "Democratic Republic of the Congo",
+	"a2": "CD",
+	"a3": "COD",
+	"un": 180
+});
+
+db.countries.insert({
+	"id": 51,
+	"name": "Cook Islands",
+	"a2": "CK",
+	"a3": "COK",
+	"un": 184
+});
+
+db.countries.insert({
+	"id": 52,
+	"name": "Costa Rica",
+	"a2": "CR",
+	"a3": "CRI",
+	"un": 188
+});
+
+db.countries.insert({
+	"id": 53,
+	"name": "Croatia",
+	"a2": "HR",
+	"a3": "HRV",
+	"un": 191
+});
+
+db.countries.insert({
+	"id": 54,
+	"name": "Cuba",
+	"a2": "CU",
+	"a3": "CUB",
+	"un": 192
+});
+
+db.countries.insert({
+	"id": 55,
+	"name": "Curaçao",
+	"a2": "CW",
+	"a3": "CUW",
+	"un": 531
+});
+
+db.countries.insert({
+	"id": 56,
+	"name": "Cyprus",
+	"a2": "CY",
+	"a3": "CYP",
+	"un": 196
+});
+
+db.countries.insert({
+	"id": 57,
+	"name": "Czech Republic",
+	"a2": "CZ",
+	"a3": "CZE",
+	"un": 203
+});
+
+db.countries.insert({
+	"id": 58,
+	"name": "Côte d'Ivoire",
+	"a2": "CI",
+	"a3": "CIV",
+	"un": 384
+});
+
+db.countries.insert({
+	"id": 59,
+	"name": "Denmark",
+	"a2": "DK",
+	"a3": "DNK",
+	"un": 208
+});
+
+db.countries.insert({
+	"id": 60,
+	"name": "Djibouti",
+	"a2": "DJ",
+	"a3": "DJI",
+	"un": 262
+});
+
+db.countries.insert({
+	"id": 61,
+	"name": "Dominica",
+	"a2": "DM",
+	"a3": "DMA",
+	"un": 212
+});
+
+db.countries.insert({
+	"id": 62,
+	"name": "Dominican Republic",
+	"a2": "DO",
+	"a3": "DOM",
+	"un": 214
+});
