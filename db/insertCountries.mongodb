@@ -743,3 +743,51 @@ db.countries.insert({
 	"a3": "GUY",
 	"un": 328
 });
+
+db.countries.insert({
+	"id": 94,
+	"name": "Haiti",
+	"a2": "HT",
+	"a3": "HTI",
+	"un": 332
+});
+
+db.countries.insert({
+	"id": 95,
+	"name": "Heard Island and McDonald Mcdonald Islands",
+	"a2": "HM",
+	"a3": "HMD",
+	"un": 334
+});
+
+db.countries.insert({
+	"id": 96,
+	"name": "Vatican City",
+	"a2": "VA",
+	"a3": "VAT",
+	"un": 336
+});
+
+db.countries.insert({
+	"id": 97,
+	"name": "Honduras",
+	"a2": "HN",
+	"a3": "HND",
+	"un": 340
+});
+
+db.countries.insert({
+	"id": 98,
+	"name": "Hong Kong",
+	"a2": "HK",
+	"a3": "HKG",
+	"un": 344
+});
+
+db.countries.insert({
+	"id": 99,
+	"name": "Hungary",
+	"a2": "HU",
+	"a3": "HUN",
+	"un": 348
+});
