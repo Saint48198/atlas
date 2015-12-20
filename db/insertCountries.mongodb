@@ -362,7 +362,7 @@ db.countries.insert({
 
 db.countries.insert({
 	"id": 46,
-	"name": "Cocos (Keeling) Islands",
+	"name": "Cocos Islands",
 	"a2": "CC",
 	"a3": "CCK",
 	"un": 166
@@ -550,4 +550,68 @@ db.countries.insert({
 	"a2": "ET",
 	"a3": "ETH",
 	"un": 231
+});
+
+db.countries.insert({
+	"id": 70,
+	"name": "Falkland Islands",
+	"a2": "FK",
+	"a3": "FLK",
+	"un": 238
+});
+
+db.countries.insert({
+	"id": 71,
+	"name": "Faroe Islands",
+	"a2": "FO",
+	"a3": "FRO",
+	"un": 234
+});
+
+db.countries.insert({
+	"id": 72,
+	"name": "Fiji",
+	"a2": "FJ",
+	"a3": "FJI",
+	"un": 242
+});
+
+db.countries.insert({
+	"id": 73,
+	"name": "Finland",
+	"a2": "FI",
+	"a3": "FIN",
+	"un": 246
+});
+
+db.countries.insert({
+	"id": 74,
+	"name": "France",
+	"a2": "FR",
+	"a3": "FRA",
+	"un": 250
+});
+
+db.countries.insert({
+	"id": 75,
+	"name": "French Guiana",
+	"a2": "GF",
+	"a3": "GUF",
+	"un": 254
+});
+
+db.countries.insert({
+	"id": 76,
+	"name": "French Polynesia",
+	"a2": "PF",
+	"a3": "PYF",
+	"un": 258
+});
+
+db.countries.insert({
+	"id": 77,
+	"name": "French Southern Territories",
+	"a2": "TF",
+	"a3": "ATF",
+	"un": 260
 });
