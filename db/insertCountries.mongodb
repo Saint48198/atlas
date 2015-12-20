@@ -951,3 +951,259 @@ db.countries.insert({
 	"a3": "KGZ",
 	"un": 417
 });
+
+db.countries.insert({
+	"id": 120,
+	"name": "Lao People's Democratic Republic",
+	"a2": "LA",
+	"a3": "LAO",
+	"un": 418
+});
+
+db.countries.insert({
+	"id": 121,
+	"name": "Latvia",
+	"a2": "LV",
+	"a3": "LVA",
+	"un": 428
+});
+
+db.countries.insert({
+	"id": 122,
+	"name": "Lebanon",
+	"a2": "LB",
+	"a3": "LBN",
+	"un": 422
+});
+
+db.countries.insert({
+	"id": 123,
+	"name": "Lesotho",
+	"a2": "LS",
+	"a3": "LSO",
+	"un": 426
+});
+
+db.countries.insert({
+	"id": 124,
+	"name": "Liberia",
+	"a2": "LR",
+	"a3": "LBR",
+	"un": 430
+});
+
+db.countries.insert({
+	"id": 125,
+	"name": "Libya",
+	"a2": "LY",
+	"a3": "LBY",
+	"un": 434
+});
+
+db.countries.insert({
+	"id": 126,
+	"name": "Liechtenstein",
+	"a2": "LI",
+	"a3": "LIE",
+	"un": 438
+});
+
+db.countries.insert({
+	"id": 127,
+	"name": "Lithuania",
+	"a2": "LT",
+	"a3": "LTU",
+	"un": 440
+});
+
+db.countries.insert({
+	"id": 128,
+	"name": "Luxembourg",
+	"a2": "LU",
+	"a3": "LUX",
+	"un": 442
+});
+
+db.countries.insert({
+	"id": 129,
+	"name": "Macao",
+	"a2": "MO",
+	"a3": "MAC",
+	"un": 446
+});
+
+db.countries.insert({
+	"id": 130,
+	"name": "Macedonia",
+	"a2": "MK",
+	"a3": "MKD",
+	"un": 807
+});
+
+db.countries.insert({
+	"id": 131,
+	"name": "Madagascar",
+	"a2": "MG",
+	"a3": "MDG",
+	"un": 450
+});
+
+db.countries.insert({
+	"id": 132,
+	"name": "Malawi",
+	"a2": "MW",
+	"a3": "MWI",
+	"un": 454
+});
+
+db.countries.insert({
+	"id": 133,
+	"name": "Malaysia",
+	"a2": "MY",
+	"a3": "MYS",
+	"un": 458
+});
+
+db.countries.insert({
+	"id": 134,
+	"name": "Maldives",
+	"a2": "MV",
+	"a3": "MDV",
+	"un": 462
+});
+
+db.countries.insert({
+	"id": 135,
+	"name": "Mali",
+	"a2": "ML",
+	"a3": "MLI",
+	"un": 466
+});
+
+db.countries.insert({
+	"id": 136,
+	"name": "Malta",
+	"a2": "MT",
+	"a3": "MLT",
+	"un": 470
+});
+
+db.countries.insert({
+	"id": 137,
+	"name": "Marshall Islands",
+	"a2": "MH",
+	"a3": "MHL",
+	"un": 584
+});
+
+db.countries.insert({
+	"id": 138,
+	"name": "Martinique",
+	"a2": "MQ",
+	"a3": "MTQ",
+	"un": 474
+});
+
+db.countries.insert({
+	"id": 139,
+	"name": "Mauritania",
+	"a2": "MR",
+	"a3": "MRT",
+	"un": 478
+});
+
+db.countries.insert({
+	"id": 140,
+	"name": "Mauritius",
+	"a2": "MU",
+	"a3": "MUS",
+	"un": 480
+});
+
+db.countries.insert({
+	"id": 141,
+	"name": "Mayotte",
+	"a2": "YT",
+	"a3": "MYT",
+	"un": 175
+});
+
+db.countries.insert({
+	"id": 142,
+	"name": "Mexico",
+	"a2": "MX",
+	"a3": "MEX",
+	"un": 484
+});
+
+db.countries.insert({
+	"id": 143,
+	"name": "Micronesia",
+	"a2": "FM",
+	"a3": "FSM",
+	"un": 583
+});
+
+db.countries.insert({
+	"id": 144,
+	"name": "Moldova",
+	"a2": "MD",
+	"a3": "MDA",
+	"un": 498
+});
+
+db.countries.insert({
+	"id": 145,
+	"name": "Monaco",
+	"a2": "MC",
+	"a3": "MCO",
+	"un": 492
+});
+
+db.countries.insert({
+	"id": 146,
+	"name": "Mongolia",
+	"a2": "MN",
+	"a3": "MNG",
+	"un": 496
+});
+
+db.countries.insert({
+	"id": 147,
+	"name": "Montenegro",
+	"a2": "ME",
+	"a3": "MNE",
+	"un": 499
+});
+
+db.countries.insert({
+	"id": 148,
+	"name": "Montserrat",
+	"a2": "MS",
+	"a3": "MSR",
+	"un": 500
+});
+
+db.countries.insert({
+	"id": 149,
+	"name": "Morocco",
+	"a2": "MA",
+	"a3": "MAR",
+	"un": 504
+});
+
+db.countries.insert({
+	"id": 150,
+	"name": "Mozambique",
+	"a2": "MZ",
+	"a3": "MOZ",
+	"un": 508
+});
+
+db.countries.insert({
+	"id": 151,
+	"name": "Myanmar",
+	"a2": "MM",
+	"a3": "MMR",
+	"un": 104
+});
