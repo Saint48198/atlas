@@ -791,3 +791,163 @@ db.countries.insert({
 	"a3": "HUN",
 	"un": 348
 });
+
+db.countries.insert({
+	"id": 100,
+	"name": "Iceland",
+	"a2": "IS",
+	"a3": "ISL",
+	"un": 352
+});
+
+db.countries.insert({
+	"id": 101,
+	"name": "India",
+	"a2": "IN",
+	"a3": "IND",
+	"un": 356
+});
+
+db.countries.insert({
+	"id": 102,
+	"name": "Indonesia",
+	"a2": "ID",
+	"a3": "IDN",
+	"un": 360
+});
+
+db.countries.insert({
+	"id": 103,
+	"name": "Iran",
+	"a2": "IR",
+	"a3": "IRN",
+	"un": 364
+});
+
+db.countries.insert({
+	"id": 104,
+	"name": "Iraq",
+	"a2": "IQ",
+	"a3": "IRQ",
+	"un": 368
+});
+
+db.countries.insert({
+	"id": 105,
+	"name": "Ireland",
+	"a2": "IE",
+	"a3": "IRL",
+	"un": 372
+});
+
+db.countries.insert({
+	"id": 106,
+	"name": "Isle of Man",
+	"a2": "IM",
+	"a3": "IMN",
+	"un": 833
+});
+
+db.countries.insert({
+	"id": 107,
+	"name": "Israel",
+	"a2": "IL",
+	"a3": "ISR",
+	"un": 376
+});
+
+db.countries.insert({
+	"id": 108,
+	"name": "Italy",
+	"a2": "IT",
+	"a3": "ITA",
+	"un": 380
+});
+
+db.countries.insert({
+	"id": 109,
+	"name": "Jamaica",
+	"a2": "JM",
+	"a3": "JAM",
+	"un": 388
+});
+
+db.countries.insert({
+	"id": 110,
+	"name": "Japan",
+	"a2": "JP",
+	"a3": "JPN",
+	"un": 392
+});
+
+db.countries.insert({
+	"id": 111,
+	"name": "Jersey",
+	"a2": "JE",
+	"a3": "JEY",
+	"un": 832
+});
+
+db.countries.insert({
+	"id": 112,
+	"name": "Jordan",
+	"a2": "JO",
+	"a3": "JOR",
+	"un": 400
+});
+
+db.countries.insert({
+	"id": 113,
+	"name": "Kazakhstan",
+	"a2": "KZ",
+	"a3": "KAZ",
+	"un": 398
+});
+
+db.countries.insert({
+	"id": 114,
+	"name": "Kenya",
+	"a2": "KE",
+	"a3": "KEN",
+	"un": 404
+});
+
+db.countries.insert({
+	"id": 115,
+	"name": "Kiribati",
+	"a2": "KI",
+	"a3": "KIR",
+	"un": 296
+});
+
+db.countries.insert({
+	"id": 116,
+	"name": "Democratic People's Republic of Korea",
+	"a2": "KP",
+	"a3": "PRK",
+	"un": 408
+});
+
+db.countries.insert({
+	"id": 117,
+	"name": "Republic of Korea",
+	"a2": "KR",
+	"a3": "KOR",
+	"un": 410
+});
+
+db.countries.insert({
+	"id": 118,
+	"name": "Kuwait",
+	"a2": "KW",
+	"a3": "KWT",
+	"un": 414
+});
+
+db.countries.insert({
+	"id": 119,
+	"name": "Kyrgyzstan",
+	"a2": "KG",
+	"a3": "KGZ",
+	"un": 417
+});
