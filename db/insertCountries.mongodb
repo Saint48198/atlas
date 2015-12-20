@@ -615,3 +615,131 @@ db.countries.insert({
 	"a3": "ATF",
 	"un": 260
 });
+
+db.countries.insert({
+	"id": 78,
+	"name": "Gabon",
+	"a2": "GA",
+	"a3": "GAB",
+	"un": 266
+});
+
+db.countries.insert({
+	"id": 79,
+	"name": "Gambia",
+	"a2": "GM",
+	"a3": "GMB",
+	"un": 270
+});
+
+db.countries.insert({
+	"id": 80,
+	"name": "Georgia",
+	"a2": "GE",
+	"a3": "GEO",
+	"un": 268
+});
+
+db.countries.insert({
+	"id": 81,
+	"name": "Germany",
+	"a2": "DE",
+	"a3": "DEU",
+	"un": 276
+});
+
+db.countries.insert({
+	"id": 82,
+	"name": "Ghana",
+	"a2": "GH",
+	"a3": "GHA",
+	"un": 288
+});
+
+db.countries.insert({
+	"id": 83,
+	"name": "Gibraltar",
+	"a2": "GI",
+	"a3": "GIB",
+	"un": 292
+});
+
+db.countries.insert({
+	"id": 84,
+	"name": "Greece",
+	"a2": "GR",
+	"a3": "GRC",
+	"un": 300
+});
+
+db.countries.insert({
+	"id": 85,
+	"name": "Greenland",
+	"a2": "GL",
+	"a3": "GRL",
+	"un": 304
+});
+
+db.countries.insert({
+	"id": 86,
+	"name": "Grenada",
+	"a2": "GD",
+	"a3": "GRD",
+	"un": 308
+});
+
+db.countries.insert({
+	"id": 87,
+	"name": "Guadeloupe",
+	"a2": "GP",
+	"a3": "GLP",
+	"un": 312
+});
+
+db.countries.insert({
+	"id": 88,
+	"name": "Guam",
+	"a2": "GU",
+	"a3": "GUM",
+	"un": 316
+});
+
+db.countries.insert({
+	"id": 89,
+	"name": "Guatemala",
+	"a2": "GT",
+	"a3": "GTM",
+	"un": 320
+});
+
+db.countries.insert({
+	"id": 90,
+	"name": "Guernsey",
+	"a2": "GG",
+	"a3": "GGY",
+	"un": 831
+});
+
+db.countries.insert({
+	"id": 91,
+	"name": "Guinea",
+	"a2": "GN",
+	"a3": "GIN",
+	"un": 324
+});
+
+db.countries.insert({
+	"id": 92,
+	"name": "Guinea-Bissau",
+	"a2": "GW",
+	"a3": "GNB",
+	"un": 624
+});
+
+db.countries.insert({
+	"id": 93,
+	"name": "Guyana",
+	"a2": "GY",
+	"a3": "GUY",
+	"un": 328
+});
