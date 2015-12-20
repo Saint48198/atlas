@@ -1207,3 +1207,115 @@ db.countries.insert({
 	"a3": "MMR",
 	"un": 104
 });
+
+db.countries.insert({
+	"id": 152,
+	"name": "Namibia",
+	"a2": "NA",
+	"a3": "NAM",
+	"un": 516
+});
+
+db.countries.insert({
+	"id": 153,
+	"name": "Nauru",
+	"a2": "NR",
+	"a3": "NRU",
+	"un": 520
+});
+
+db.countries.insert({
+	"id": 154,
+	"name": "Nepal",
+	"a2": "NP",
+	"a3": "NPL",
+	"un": 524
+});
+
+db.countries.insert({
+	"id": 155,
+	"name": "Netherlands",
+	"a2": "NL",
+	"a3": "NLD",
+	"un": 528
+});
+
+db.countries.insert({
+	"id": 156,
+	"name": "New Caledonia",
+	"a2": "NC",
+	"a3": "NCL",
+	"un": 540
+});
+
+db.countries.insert({
+	"id": 157,
+	"name": "New Zealand",
+	"a2": "NZ",
+	"a3": "NZL",
+	"un": 554
+});
+
+db.countries.insert({
+	"id": 158,
+	"name": "Nicaragua",
+	"a2": "NI",
+	"a3": "NIC",
+	"un": 558
+});
+
+db.countries.insert({
+	"id": 159,
+	"name": "Niger",
+	"a2": "NE",
+	"a3": "NER",
+	"un": 562
+});
+
+db.countries.insert({
+	"id": 160,
+	"name": "Nigeria",
+	"a2": "NG",
+	"a3": "NGA",
+	"un": 566
+});
+
+db.countries.insert({
+	"id": 161,
+	"name": "Niue",
+	"a2": "NU",
+	"a3": "NIU",
+	"un": 570
+});
+
+db.countries.insert({
+	"id": 162,
+	"name": "Norfolk Island",
+	"a2": "NF",
+	"a3": "NFK",
+	"un": 574
+});
+
+db.countries.insert({
+	"id": 163,
+	"name": "Northern Mariana Islands",
+	"a2": "MP",
+	"a3": "MNP",
+	"un": 580
+});
+
+db.countries.insert({
+	"id": 164,
+	"name": "Norway",
+	"a2": "NO",
+	"a3": "NOR",
+	"un": 578
+});
+
+db.countries.insert({
+	"id": 165,
+	"name": "Oman",
+	"a2": "OM",
+	"a3": "OMN",
+	"un": 512
+});
