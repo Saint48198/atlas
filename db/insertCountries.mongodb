@@ -1719,3 +1719,115 @@ db.countries.insert({
 	"a3": "SYR",
 	"un": 760
 });
+
+db.countries.insert({
+	"id": 216,
+	"name": "Taiwan",
+	"a2": "TW",
+	"a3": "TWN",
+	"un": 158
+});
+
+db.countries.insert({
+	"id": 217,
+	"name": "Tajikistan",
+	"a2": "TJ",
+	"a3": "TJK",
+	"un": 762
+});
+
+db.countries.insert({
+	"id": 218,
+	"name": "United Republic of Tanzania",
+	"a2": "TZ",
+	"a3": "TZA",
+	"un": 834
+});
+
+db.countries.insert({
+	"id": 219,
+	"name": "Thailand",
+	"a2": "TH",
+	"a3": "THA",
+	"un": 764
+});
+
+db.countries.insert({
+	"id": 220,
+	"name": "Timor-Leste",
+	"a2": "TL",
+	"a3": "TLS",
+	"un": 626
+});
+
+db.countries.insert({
+	"id": 221,
+	"name": "Togo",
+	"a2": "TG",
+	"a3": "TGO",
+	"un": 768
+});
+
+db.countries.insert({
+	"id": 222,
+	"name": "Tokelau",
+	"a2": "TK",
+	"a3": "TKL",
+	"un": 772
+});
+
+db.countries.insert({
+	"id": 223,
+	"name": "Tonga",
+	"a2": "TO",
+	"a3": "TON",
+	"un": 776
+});
+
+db.countries.insert({
+	"id": 224,
+	"name": "Trinidad and Tobago",
+	"a2": "TT",
+	"a3": "TTO",
+	"un": 780
+});
+
+db.countries.insert({
+	"id": 225,
+	"name": "Tunisia",
+	"a2": "TN",
+	"a3": "TUN",
+	"un": 788
+});
+
+db.countries.insert({
+	"id": 226,
+	"name": "Turkey",
+	"a2": "TR",
+	"a3": "TUR",
+	"un": 792
+});
+
+db.countries.insert({
+	"id": 227,
+	"name": "Turkmenistan",
+	"a2": "TM",
+	"a3": "TKM",
+	"un": 795
+});
+
+db.countries.insert({
+	"id": 228,
+	"name": "Turks and Caicos Islands",
+	"a2": "TC",
+	"a3": "TCA",
+	"un": 796
+});
+
+db.countries.insert({
+	"id": 229,
+	"name": "Tuvalu",
+	"a2": "TV",
+	"a3": "TUV",
+	"un": 798
+});
