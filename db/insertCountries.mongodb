@@ -1319,3 +1319,107 @@ db.countries.insert({
 	"a3": "OMN",
 	"un": 512
 });
+
+db.countries.insert({
+	"id": 166,
+	"name": "Pakistan",
+	"a2": "PK",
+	"a3": "PAK",
+	"un": 586
+});
+
+db.countries.insert({
+	"id": 167,
+	"name": "Palau",
+	"a2": "PW",
+	"a3": "PLW",
+	"un": 585
+});
+
+db.countries.insert({
+	"id": 168,
+	"name": "State of Palestine",
+	"a2": "PS",
+	"a3": "PSE",
+	"un": 275
+});
+
+db.countries.insert({
+	"id": 169,
+	"name": "Panama",
+	"a2": "PA",
+	"a3": "PAN",
+	"un": 591
+});
+
+db.countries.insert({
+	"id": 170,
+	"name": "Papua New Guinea",
+	"a2": "PG",
+	"a3": "PNG",
+	"un": 598
+});
+
+db.countries.insert({
+	"id": 171,
+	"name": "Paraguay",
+	"a2": "PY",
+	"a3": "PRY",
+	"un": 600
+});
+
+db.countries.insert({
+	"id": 172,
+	"name": "Peru",
+	"a2": "PE",
+	"a3": "PER",
+	"un": 604
+});
+
+db.countries.insert({
+	"id": 173,
+	"name": "Philippines",
+	"a2": "PH",
+	"a3": "PHL",
+	"un": 608
+});
+
+db.countries.insert({
+	"id": 174,
+	"name": "Pitcairn",
+	"a2": "PN",
+	"a3": "PCN",
+	"un": 612
+});
+
+db.countries.insert({
+	"id": 175,
+	"name": "Poland",
+	"a2": "PL",
+	"a3": "POL",
+	"un": 616
+});
+
+db.countries.insert({
+	"id": 176,
+	"name": "Portugal",
+	"a2": "PT",
+	"a3": "PRT",
+	"un": 620
+});
+
+db.countries.insert({
+	"id": 177,
+	"name": "Puerto Rico",
+	"a2": "PR",
+	"a3": "PRI",
+	"un": 630
+});
+
+db.countries.insert({
+	"id": 178,
+	"name": "Qatar",
+	"a2": "QA",
+	"a3": "QAT",
+	"un": 634
+});
