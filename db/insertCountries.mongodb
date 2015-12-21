@@ -3,7 +3,8 @@ db.countries.insert({
 	"name": "Afghanistan",
 	"a2": "AF",
 	"a3": "AFG",
-	"un": 4
+	"un": 4,
+	"region": ""
 });
 
 db.countries.insert({
@@ -11,7 +12,8 @@ db.countries.insert({
 	"name": "Albania",
 	"a2": "AL",
 	"a3": "ALB",
-	"un": 8
+	"un": 8,
+	"region": ""
 });
 
 db.countries.insert({
@@ -19,17 +21,17 @@ db.countries.insert({
 	"name": "Algeria",
 	"a2": "DZ",
 	"a3": "DZA",
-	"un": 12
+	"un": 12,
+	"region": ""
 });
-
----------- ccountries already added to db are above this line -------------
 
 db.countries.insert({
 	"id": 3,
 	"name": "American Samoa",
 	"a2": "AS",
 	"a3": "ASM",
-	"un": 16
+	"un": 16,
+	"region": ""
 });
 
 db.countries.insert({
@@ -37,7 +39,8 @@ db.countries.insert({
 	"name": "Andorra",
 	"a2": "AD",
 	"a3": "AND",
-	"un": 20
+	"un": 20,
+	"region": ""
 });
 
 db.countries.insert({
@@ -45,7 +48,8 @@ db.countries.insert({
 	"name": "Angola",
 	"a2": "AO",
 	"a3": "AGO",
-	"un": 24
+	"un": 24,
+	"region": ""
 });
 
 db.countries.insert({
@@ -53,7 +57,8 @@ db.countries.insert({
 	"name": "Anguilla",
 	"a2": "AI",
 	"a3": "AIA",
-	"un": 660
+	"un": 660,
+	"region": ""
 });
 
 db.countries.insert({
@@ -61,7 +66,8 @@ db.countries.insert({
 	"name": "Antarctica",
 	"a2": "AQ",
 	"a3": "ATA",
-	"un": 10
+	"un": 10,
+	"region": ""
 });
 
 db.countries.insert({
@@ -69,7 +75,8 @@ db.countries.insert({
 	"name": "Antigua and Barbuda",
 	"a2": "AG",
 	"a3": "ATG",
-	"un": 28
+	"un": 28,
+	"region": ""
 });
 
 db.countries.insert({
@@ -77,7 +84,8 @@ db.countries.insert({
 	"name": "Argentina",
 	"a2": "AR",
 	"a3": "ARG",
-	"un": 32
+	"un": 32,
+	"region": ""
 });
 
 db.countries.insert({
@@ -85,7 +93,8 @@ db.countries.insert({
 	"name": "Armenia",
 	"a2": "AM",
 	"a3": "ARM",
-	"un": 51
+	"un": 51,
+	"region": ""
 });
 
 db.countries.insert({
@@ -93,7 +102,8 @@ db.countries.insert({
 	"name": "Aruba",
 	"a2": "AW",
 	"a3": "ABW",
-	"un": 533
+	"un": 533,
+	"region": ""
 });
 
 db.countries.insert({
@@ -101,7 +111,8 @@ db.countries.insert({
 	"name": "Australia",
 	"a2": "AU",
 	"a3": "AUS",
-	"un": 36
+	"un": 36,
+	"region": ""
 });
 
 db.countries.insert({
@@ -109,7 +120,8 @@ db.countries.insert({
 	"name": "Austria",
 	"a2": "AT",
 	"a3": "AUT",
-	"un": 40
+	"un": 40,
+	"region": ""
 });
 
 db.countries.insert({
@@ -117,7 +129,8 @@ db.countries.insert({
 	"name": "Azerbaijan",
 	"a2": "AZ",
 	"a3": "AZE",
-	"un": 31
+	"un": 31,
+	"region": ""
 });
 
 db.countries.insert({
@@ -125,7 +138,8 @@ db.countries.insert({
 	"name": "Bahamas",
 	"a2": "BS",
 	"a3": "BHS",
-	"un": 44
+	"un": 44,
+	"region": ""
 });
 
 db.countries.insert({
@@ -133,7 +147,8 @@ db.countries.insert({
 	"name": "Bahrain",
 	"a2": "BH",
 	"a3": "BHR",
-	"un": 48
+	"un": 48,
+	"region": ""
 });
 
 db.countries.insert({
@@ -141,7 +156,8 @@ db.countries.insert({
 	"name": "Bangladesh",
 	"a2": "BD",
 	"a3": "BGD",
-	"un": 50
+	"un": 50,
+	"region": ""
 });
 
 db.countries.insert({
@@ -149,7 +165,8 @@ db.countries.insert({
 	"name": "Barbados",
 	"a2": "BB",
 	"a3": "BRB",
-	"un": 52
+	"un": 52,
+	"region": ""
 });
 
 db.countries.insert({
@@ -157,7 +174,8 @@ db.countries.insert({
 	"name": "Belarus",
 	"a2": "BY",
 	"a3": "BLR",
-	"un": 112
+	"un": 112,
+	"region": ""
 });
 
 db.countries.insert({
@@ -165,7 +183,8 @@ db.countries.insert({
 	"name": "Belgium",
 	"a2": "BE",
 	"a3": "BEL",
-	"un": 56
+	"un": 56,
+	"region": ""
 });
 
 db.countries.insert({
@@ -173,7 +192,8 @@ db.countries.insert({
 	"name": "Belize",
 	"a2": "BZ",
 	"a3": "BLZ",
-	"un": 84
+	"un": 84,
+	"region": ""
 });
 
 db.countries.insert({
@@ -181,7 +201,8 @@ db.countries.insert({
 	"name": "Benin",
 	"a2": "BJ",
 	"a3": "BEN",
-	"un": 204
+	"un": 204,
+	"region": ""
 });
 
 db.countries.insert({
@@ -189,7 +210,8 @@ db.countries.insert({
 	"name": "Bermuda",
 	"a2": "BM",
 	"a3": "BMU",
-	"un": 60
+	"un": 60,
+	"region": ""
 });
 
 db.countries.insert({
@@ -197,7 +219,8 @@ db.countries.insert({
 	"name": "Bhutan",
 	"a2": "BT",
 	"a3": "BTN",
-	"un": 64
+	"un": 64,
+	"region": ""
 });
 
 db.countries.insert({
@@ -205,7 +228,8 @@ db.countries.insert({
 	"name": "Bolivia",
 	"a2": "BO",
 	"a3": "BOL",
-	"un": 68
+	"un": 68,
+	"region": ""
 });
 
 db.countries.insert({
@@ -213,7 +237,8 @@ db.countries.insert({
 	"name": "Bonaire",
 	"a2": "BQ",
 	"a3": "BES",
-	"un": 535
+	"un": 535,
+	"region": ""
 });
 
 db.countries.insert({
@@ -221,7 +246,8 @@ db.countries.insert({
 	"name": "Botswana",
 	"a2": "BW",
 	"a3": "BWA",
-	"un": 72
+	"un": 72,
+	"region": ""
 });
 
 db.countries.insert({
@@ -229,7 +255,8 @@ db.countries.insert({
 	"name": "Bouvet Island",
 	"a2": "BV",
 	"a3": "BVT",
-	"un": 74
+	"un": 74,
+	"region": ""
 });
 
 db.countries.insert({
@@ -237,7 +264,8 @@ db.countries.insert({
 	"name": "Brazil",
 	"a2": "BR",
 	"a3": "BRA",
-	"un": 76
+	"un": 76,
+	"region": ""
 });
 
 db.countries.insert({
@@ -245,7 +273,8 @@ db.countries.insert({
 	"name": "British Indian Ocean Territory",
 	"a2": "IO",
 	"a3": "IOT",
-	"un": 86
+	"un": 86,
+	"region": ""
 });
 
 db.countries.insert({
@@ -253,7 +282,8 @@ db.countries.insert({
 	"name": "Brunei Darussalam",
 	"a2": "BN",
 	"a3": "BRN",
-	"un": 96
+	"un": 96,
+	"region": ""
 });
 
 db.countries.insert({
@@ -261,7 +291,8 @@ db.countries.insert({
 	"name": "Bulgaria",
 	"a2": "BG",
 	"a3": "BGR",
-	"un": 100
+	"un": 100,
+	"region": ""
 });
 
 db.countries.insert({
@@ -269,7 +300,8 @@ db.countries.insert({
 	"name": "Burkina Faso",
 	"a2": "BF",
 	"a3": "BFA",
-	"un": 854
+	"un": 854,
+	"region": ""
 });
 
 db.countries.insert({
@@ -277,7 +309,8 @@ db.countries.insert({
 	"name": "Burundi",
 	"a2": "BI",
 	"a3": "BDI",
-	"un": 108
+	"un": 108,
+	"region": ""
 });
 
 db.countries.insert({
@@ -285,7 +318,8 @@ db.countries.insert({
 	"name": "Cambodia",
 	"a2": "KH",
 	"a3": "KHM",
-	"un": 116
+	"un": 116,
+	"region": ""
 });
 
 db.countries.insert({
@@ -293,7 +327,8 @@ db.countries.insert({
 	"name": "Cameroon",
 	"a2": "CM",
 	"a3": "CMR",
-	"un": 120
+	"un": 120,
+	"region": ""
 });
 
 db.countries.insert({
@@ -301,7 +336,8 @@ db.countries.insert({
 	"name": "Canada",
 	"a2": "CA",
 	"a3": "CAN",
-	"un": 124
+	"un": 124,
+	"region": ""
 });
 
 db.countries.insert({
@@ -309,7 +345,8 @@ db.countries.insert({
 	"name": "Cape Verde",
 	"a2": "CV",
 	"a3": "CPV",
-	"un": 132
+	"un": 132,
+	"region": ""
 });
 
 db.countries.insert({
@@ -317,7 +354,8 @@ db.countries.insert({
 	"name": "Cayman Islands",
 	"a2": "KY",
 	"a3": "CYM",
-	"un": 136
+	"un": 136,
+	"region": ""
 });
 
 db.countries.insert({
@@ -325,7 +363,8 @@ db.countries.insert({
 	"name": "Central African Republic",
 	"a2": "CF",
 	"a3": "CAF",
-	"un": 140
+	"un": 140,
+	"region": ""
 });
 
 db.countries.insert({
@@ -333,7 +372,8 @@ db.countries.insert({
 	"name": "Chad",
 	"a2": "TD",
 	"a3": "TCD",
-	"un": 148
+	"un": 148,
+	"region": ""
 });
 
 db.countries.insert({
@@ -341,7 +381,8 @@ db.countries.insert({
 	"name": "Chile",
 	"a2": "CL",
 	"a3": "CHL",
-	"un": 152
+	"un": 152,
+	"region": ""
 });
 
 db.countries.insert({
@@ -349,7 +390,8 @@ db.countries.insert({
 	"name": "China",
 	"a2": "CN",
 	"a3": "CHN",
-	"un": 156
+	"un": 156,
+	"region": ""
 });
 
 db.countries.insert({
@@ -357,7 +399,8 @@ db.countries.insert({
 	"name": "Christmas Island",
 	"a2": "CX",
 	"a3": "CXR",
-	"un": 162
+	"un": 162,
+	"region": ""
 });
 
 db.countries.insert({
@@ -365,7 +408,8 @@ db.countries.insert({
 	"name": "Cocos Islands",
 	"a2": "CC",
 	"a3": "CCK",
-	"un": 166
+	"un": 166,
+	"region": ""
 });
 
 db.countries.insert({
@@ -373,7 +417,8 @@ db.countries.insert({
 	"name": "Colombia",
 	"a2": "CO",
 	"a3": "COL",
-	"un": 170
+	"un": 170,
+	"region": ""
 });
 
 db.countries.insert({
@@ -381,7 +426,8 @@ db.countries.insert({
 	"name": "Comoros",
 	"a2": "KM",
 	"a3": "COM",
-	"un": 174
+	"un": 174,
+	"region": ""
 });
 
 db.countries.insert({
@@ -389,7 +435,8 @@ db.countries.insert({
 	"name": "Congo",
 	"a2": "CG",
 	"a3": "COG",
-	"un": 178
+	"un": 178,
+	"region": ""
 });
 
 db.countries.insert({
@@ -397,7 +444,8 @@ db.countries.insert({
 	"name": "Democratic Republic of the Congo",
 	"a2": "CD",
 	"a3": "COD",
-	"un": 180
+	"un": 180,
+	"region": ""
 });
 
 db.countries.insert({
@@ -405,7 +453,8 @@ db.countries.insert({
 	"name": "Cook Islands",
 	"a2": "CK",
 	"a3": "COK",
-	"un": 184
+	"un": 184,
+	"region": ""
 });
 
 db.countries.insert({
@@ -413,7 +462,8 @@ db.countries.insert({
 	"name": "Costa Rica",
 	"a2": "CR",
 	"a3": "CRI",
-	"un": 188
+	"un": 188,
+	"region": ""
 });
 
 db.countries.insert({
@@ -421,7 +471,8 @@ db.countries.insert({
 	"name": "Croatia",
 	"a2": "HR",
 	"a3": "HRV",
-	"un": 191
+	"un": 191,
+	"region": ""
 });
 
 db.countries.insert({
@@ -429,7 +480,8 @@ db.countries.insert({
 	"name": "Cuba",
 	"a2": "CU",
 	"a3": "CUB",
-	"un": 192
+	"un": 192,
+	"region": ""
 });
 
 db.countries.insert({
@@ -437,7 +489,8 @@ db.countries.insert({
 	"name": "Curaçao",
 	"a2": "CW",
 	"a3": "CUW",
-	"un": 531
+	"un": 531,
+	"region": ""
 });
 
 db.countries.insert({
@@ -445,7 +498,8 @@ db.countries.insert({
 	"name": "Cyprus",
 	"a2": "CY",
 	"a3": "CYP",
-	"un": 196
+	"un": 196,
+	"region": ""
 });
 
 db.countries.insert({
@@ -453,7 +507,8 @@ db.countries.insert({
 	"name": "Czech Republic",
 	"a2": "CZ",
 	"a3": "CZE",
-	"un": 203
+	"un": 203,
+	"region": ""
 });
 
 db.countries.insert({
@@ -461,7 +516,8 @@ db.countries.insert({
 	"name": "Côte d'Ivoire",
 	"a2": "CI",
 	"a3": "CIV",
-	"un": 384
+	"un": 384,
+	"region": ""
 });
 
 db.countries.insert({
@@ -469,7 +525,8 @@ db.countries.insert({
 	"name": "Denmark",
 	"a2": "DK",
 	"a3": "DNK",
-	"un": 208
+	"un": 208,
+	"region": ""
 });
 
 db.countries.insert({
@@ -477,7 +534,8 @@ db.countries.insert({
 	"name": "Djibouti",
 	"a2": "DJ",
 	"a3": "DJI",
-	"un": 262
+	"un": 262,
+	"region": ""
 });
 
 db.countries.insert({
@@ -485,7 +543,8 @@ db.countries.insert({
 	"name": "Dominica",
 	"a2": "DM",
 	"a3": "DMA",
-	"un": 212
+	"un": 212,
+	"region": ""
 });
 
 db.countries.insert({
@@ -493,7 +552,8 @@ db.countries.insert({
 	"name": "Dominican Republic",
 	"a2": "DO",
 	"a3": "DOM",
-	"un": 214
+	"un": 214,
+	"region": ""
 });
 
 db.countries.insert({
@@ -501,7 +561,8 @@ db.countries.insert({
 	"name": "Ecuador",
 	"a2": "EC",
 	"a3": "ECU",
-	"un": 218
+	"un": 218,
+	"region": ""
 });
 
 db.countries.insert({
@@ -509,7 +570,8 @@ db.countries.insert({
 	"name": "Egypt",
 	"a2": "EG",
 	"a3": "EGY",
-	"un": 818
+	"un": 818,
+	"region": ""
 });
 
 db.countries.insert({
@@ -517,7 +579,8 @@ db.countries.insert({
 	"name": "El Salvador",
 	"a2": "SV",
 	"a3": "SLV",
-	"un": 222
+	"un": 222,
+	"region": ""
 });
 
 db.countries.insert({
@@ -525,7 +588,8 @@ db.countries.insert({
 	"name": "Equatorial Guinea",
 	"a2": "GQ",
 	"a3": "GNQ",
-	"un": 226
+	"un": 226,
+	"region": ""
 });
 
 db.countries.insert({
@@ -533,7 +597,8 @@ db.countries.insert({
 	"name": "Eritrea",
 	"a2": "ER",
 	"a3": "ERI",
-	"un": 232
+	"un": 232,
+	"region": ""
 });
 
 db.countries.insert({
@@ -541,7 +606,8 @@ db.countries.insert({
 	"name": "Estonia",
 	"a2": "EE",
 	"a3": "EST",
-	"un": 233
+	"un": 233,
+	"region": ""
 });
 
 db.countries.insert({
@@ -549,7 +615,8 @@ db.countries.insert({
 	"name": "Ethiopia",
 	"a2": "ET",
 	"a3": "ETH",
-	"un": 231
+	"un": 231,
+	"region": ""
 });
 
 db.countries.insert({
@@ -557,7 +624,8 @@ db.countries.insert({
 	"name": "Falkland Islands",
 	"a2": "FK",
 	"a3": "FLK",
-	"un": 238
+	"un": 238,
+	"region": ""
 });
 
 db.countries.insert({
@@ -565,7 +633,8 @@ db.countries.insert({
 	"name": "Faroe Islands",
 	"a2": "FO",
 	"a3": "FRO",
-	"un": 234
+	"un": 234,
+	"region": ""
 });
 
 db.countries.insert({
@@ -573,7 +642,8 @@ db.countries.insert({
 	"name": "Fiji",
 	"a2": "FJ",
 	"a3": "FJI",
-	"un": 242
+	"un": 242,
+	"region": ""
 });
 
 db.countries.insert({
@@ -581,7 +651,8 @@ db.countries.insert({
 	"name": "Finland",
 	"a2": "FI",
 	"a3": "FIN",
-	"un": 246
+	"un": 246,
+	"region": ""
 });
 
 db.countries.insert({
@@ -589,7 +660,8 @@ db.countries.insert({
 	"name": "France",
 	"a2": "FR",
 	"a3": "FRA",
-	"un": 250
+	"un": 250,
+	"region": ""
 });
 
 db.countries.insert({
@@ -597,7 +669,8 @@ db.countries.insert({
 	"name": "French Guiana",
 	"a2": "GF",
 	"a3": "GUF",
-	"un": 254
+	"un": 254,
+	"region": ""
 });
 
 db.countries.insert({
@@ -605,7 +678,8 @@ db.countries.insert({
 	"name": "French Polynesia",
 	"a2": "PF",
 	"a3": "PYF",
-	"un": 258
+	"un": 258,
+	"region": ""
 });
 
 db.countries.insert({
@@ -613,7 +687,8 @@ db.countries.insert({
 	"name": "French Southern Territories",
 	"a2": "TF",
 	"a3": "ATF",
-	"un": 260
+	"un": 260,
+	"region": ""
 });
 
 db.countries.insert({
@@ -621,7 +696,8 @@ db.countries.insert({
 	"name": "Gabon",
 	"a2": "GA",
 	"a3": "GAB",
-	"un": 266
+	"un": 266,
+	"region": ""
 });
 
 db.countries.insert({
@@ -629,7 +705,8 @@ db.countries.insert({
 	"name": "Gambia",
 	"a2": "GM",
 	"a3": "GMB",
-	"un": 270
+	"un": 270,
+	"region": ""
 });
 
 db.countries.insert({
@@ -637,7 +714,8 @@ db.countries.insert({
 	"name": "Georgia",
 	"a2": "GE",
 	"a3": "GEO",
-	"un": 268
+	"un": 268,
+	"region": ""
 });
 
 db.countries.insert({
@@ -645,7 +723,8 @@ db.countries.insert({
 	"name": "Germany",
 	"a2": "DE",
 	"a3": "DEU",
-	"un": 276
+	"un": 276,
+	"region": ""
 });
 
 db.countries.insert({
@@ -653,7 +732,8 @@ db.countries.insert({
 	"name": "Ghana",
 	"a2": "GH",
 	"a3": "GHA",
-	"un": 288
+	"un": 288,
+	"region": ""
 });
 
 db.countries.insert({
@@ -661,7 +741,8 @@ db.countries.insert({
 	"name": "Gibraltar",
 	"a2": "GI",
 	"a3": "GIB",
-	"un": 292
+	"un": 292,
+	"region": ""
 });
 
 db.countries.insert({
@@ -669,7 +750,8 @@ db.countries.insert({
 	"name": "Greece",
 	"a2": "GR",
 	"a3": "GRC",
-	"un": 300
+	"un": 300,
+	"region": ""
 });
 
 db.countries.insert({
@@ -677,7 +759,8 @@ db.countries.insert({
 	"name": "Greenland",
 	"a2": "GL",
 	"a3": "GRL",
-	"un": 304
+	"un": 304,
+	"region": ""
 });
 
 db.countries.insert({
@@ -685,7 +768,8 @@ db.countries.insert({
 	"name": "Grenada",
 	"a2": "GD",
 	"a3": "GRD",
-	"un": 308
+	"un": 308,
+	"region": ""
 });
 
 db.countries.insert({
@@ -693,7 +777,8 @@ db.countries.insert({
 	"name": "Guadeloupe",
 	"a2": "GP",
 	"a3": "GLP",
-	"un": 312
+	"un": 312,
+	"region": ""
 });
 
 db.countries.insert({
@@ -701,7 +786,8 @@ db.countries.insert({
 	"name": "Guam",
 	"a2": "GU",
 	"a3": "GUM",
-	"un": 316
+	"un": 316,
+	"region": ""
 });
 
 db.countries.insert({
@@ -709,7 +795,8 @@ db.countries.insert({
 	"name": "Guatemala",
 	"a2": "GT",
 	"a3": "GTM",
-	"un": 320
+	"un": 320,
+	"region": ""
 });
 
 db.countries.insert({
@@ -717,7 +804,8 @@ db.countries.insert({
 	"name": "Guernsey",
 	"a2": "GG",
 	"a3": "GGY",
-	"un": 831
+	"un": 831,
+	"region": ""
 });
 
 db.countries.insert({
@@ -725,7 +813,8 @@ db.countries.insert({
 	"name": "Guinea",
 	"a2": "GN",
 	"a3": "GIN",
-	"un": 324
+	"un": 324,
+	"region": ""
 });
 
 db.countries.insert({
@@ -733,7 +822,8 @@ db.countries.insert({
 	"name": "Guinea-Bissau",
 	"a2": "GW",
 	"a3": "GNB",
-	"un": 624
+	"un": 624,
+	"region": ""
 });
 
 db.countries.insert({
@@ -741,7 +831,8 @@ db.countries.insert({
 	"name": "Guyana",
 	"a2": "GY",
 	"a3": "GUY",
-	"un": 328
+	"un": 328,
+	"region": ""
 });
 
 db.countries.insert({
@@ -749,7 +840,8 @@ db.countries.insert({
 	"name": "Haiti",
 	"a2": "HT",
 	"a3": "HTI",
-	"un": 332
+	"un": 332,
+	"region": ""
 });
 
 db.countries.insert({
@@ -757,7 +849,8 @@ db.countries.insert({
 	"name": "Heard Island and McDonald Mcdonald Islands",
 	"a2": "HM",
 	"a3": "HMD",
-	"un": 334
+	"un": 334,
+	"region": ""
 });
 
 db.countries.insert({
@@ -765,7 +858,8 @@ db.countries.insert({
 	"name": "Vatican City",
 	"a2": "VA",
 	"a3": "VAT",
-	"un": 336
+	"un": 336,
+	"region": ""
 });
 
 db.countries.insert({
@@ -773,7 +867,8 @@ db.countries.insert({
 	"name": "Honduras",
 	"a2": "HN",
 	"a3": "HND",
-	"un": 340
+	"un": 340,
+	"region": ""
 });
 
 db.countries.insert({
@@ -781,7 +876,8 @@ db.countries.insert({
 	"name": "Hong Kong",
 	"a2": "HK",
 	"a3": "HKG",
-	"un": 344
+	"un": 344,
+	"region": ""
 });
 
 db.countries.insert({
@@ -789,7 +885,8 @@ db.countries.insert({
 	"name": "Hungary",
 	"a2": "HU",
 	"a3": "HUN",
-	"un": 348
+	"un": 348,
+	"region": ""
 });
 
 db.countries.insert({
@@ -797,7 +894,8 @@ db.countries.insert({
 	"name": "Iceland",
 	"a2": "IS",
 	"a3": "ISL",
-	"un": 352
+	"un": 352,
+	"region": ""
 });
 
 db.countries.insert({
@@ -805,7 +903,8 @@ db.countries.insert({
 	"name": "India",
 	"a2": "IN",
 	"a3": "IND",
-	"un": 356
+	"un": 356,
+	"region": ""
 });
 
 db.countries.insert({
@@ -813,7 +912,8 @@ db.countries.insert({
 	"name": "Indonesia",
 	"a2": "ID",
 	"a3": "IDN",
-	"un": 360
+	"un": 360,
+	"region": ""
 });
 
 db.countries.insert({
@@ -821,7 +921,8 @@ db.countries.insert({
 	"name": "Iran",
 	"a2": "IR",
 	"a3": "IRN",
-	"un": 364
+	"un": 364,
+	"region": ""
 });
 
 db.countries.insert({
@@ -829,7 +930,8 @@ db.countries.insert({
 	"name": "Iraq",
 	"a2": "IQ",
 	"a3": "IRQ",
-	"un": 368
+	"un": 368,
+	"region": ""
 });
 
 db.countries.insert({
@@ -837,7 +939,8 @@ db.countries.insert({
 	"name": "Ireland",
 	"a2": "IE",
 	"a3": "IRL",
-	"un": 372
+	"un": 372,
+	"region": ""
 });
 
 db.countries.insert({
@@ -845,7 +948,8 @@ db.countries.insert({
 	"name": "Isle of Man",
 	"a2": "IM",
 	"a3": "IMN",
-	"un": 833
+	"un": 833,
+	"region": ""
 });
 
 db.countries.insert({
@@ -853,7 +957,8 @@ db.countries.insert({
 	"name": "Israel",
 	"a2": "IL",
 	"a3": "ISR",
-	"un": 376
+	"un": 376,
+	"region": ""
 });
 
 db.countries.insert({
@@ -861,7 +966,8 @@ db.countries.insert({
 	"name": "Italy",
 	"a2": "IT",
 	"a3": "ITA",
-	"un": 380
+	"un": 380,
+	"region": ""
 });
 
 db.countries.insert({
@@ -869,7 +975,8 @@ db.countries.insert({
 	"name": "Jamaica",
 	"a2": "JM",
 	"a3": "JAM",
-	"un": 388
+	"un": 388,
+	"region": ""
 });
 
 db.countries.insert({
@@ -877,7 +984,8 @@ db.countries.insert({
 	"name": "Japan",
 	"a2": "JP",
 	"a3": "JPN",
-	"un": 392
+	"un": 392,
+	"region": ""
 });
 
 db.countries.insert({
@@ -885,7 +993,8 @@ db.countries.insert({
 	"name": "Jersey",
 	"a2": "JE",
 	"a3": "JEY",
-	"un": 832
+	"un": 832,
+	"region": ""
 });
 
 db.countries.insert({
@@ -893,7 +1002,8 @@ db.countries.insert({
 	"name": "Jordan",
 	"a2": "JO",
 	"a3": "JOR",
-	"un": 400
+	"un": 400,
+	"region": ""
 });
 
 db.countries.insert({
@@ -901,7 +1011,8 @@ db.countries.insert({
 	"name": "Kazakhstan",
 	"a2": "KZ",
 	"a3": "KAZ",
-	"un": 398
+	"un": 398,
+	"region": ""
 });
 
 db.countries.insert({
@@ -909,7 +1020,8 @@ db.countries.insert({
 	"name": "Kenya",
 	"a2": "KE",
 	"a3": "KEN",
-	"un": 404
+	"un": 404,
+	"region": ""
 });
 
 db.countries.insert({
@@ -917,7 +1029,8 @@ db.countries.insert({
 	"name": "Kiribati",
 	"a2": "KI",
 	"a3": "KIR",
-	"un": 296
+	"un": 296,
+	"region": ""
 });
 
 db.countries.insert({
@@ -925,7 +1038,8 @@ db.countries.insert({
 	"name": "Democratic People's Republic of Korea",
 	"a2": "KP",
 	"a3": "PRK",
-	"un": 408
+	"un": 408,
+	"region": ""
 });
 
 db.countries.insert({
@@ -933,7 +1047,8 @@ db.countries.insert({
 	"name": "Republic of Korea",
 	"a2": "KR",
 	"a3": "KOR",
-	"un": 410
+	"un": 410,
+	"region": ""
 });
 
 db.countries.insert({
@@ -941,7 +1056,8 @@ db.countries.insert({
 	"name": "Kuwait",
 	"a2": "KW",
 	"a3": "KWT",
-	"un": 414
+	"un": 414,
+	"region": ""
 });
 
 db.countries.insert({
@@ -949,7 +1065,8 @@ db.countries.insert({
 	"name": "Kyrgyzstan",
 	"a2": "KG",
 	"a3": "KGZ",
-	"un": 417
+	"un": 417,
+	"region": ""
 });
 
 db.countries.insert({
@@ -957,7 +1074,8 @@ db.countries.insert({
 	"name": "Lao People's Democratic Republic",
 	"a2": "LA",
 	"a3": "LAO",
-	"un": 418
+	"un": 418,
+	"region": ""
 });
 
 db.countries.insert({
@@ -965,7 +1083,8 @@ db.countries.insert({
 	"name": "Latvia",
 	"a2": "LV",
 	"a3": "LVA",
-	"un": 428
+	"un": 428,
+	"region": ""
 });
 
 db.countries.insert({
@@ -973,7 +1092,8 @@ db.countries.insert({
 	"name": "Lebanon",
 	"a2": "LB",
 	"a3": "LBN",
-	"un": 422
+	"un": 422,
+	"region": ""
 });
 
 db.countries.insert({
@@ -981,7 +1101,8 @@ db.countries.insert({
 	"name": "Lesotho",
 	"a2": "LS",
 	"a3": "LSO",
-	"un": 426
+	"un": 426,
+	"region": ""
 });
 
 db.countries.insert({
@@ -989,7 +1110,8 @@ db.countries.insert({
 	"name": "Liberia",
 	"a2": "LR",
 	"a3": "LBR",
-	"un": 430
+	"un": 430,
+	"region": ""
 });
 
 db.countries.insert({
@@ -997,7 +1119,8 @@ db.countries.insert({
 	"name": "Libya",
 	"a2": "LY",
 	"a3": "LBY",
-	"un": 434
+	"un": 434,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1005,7 +1128,8 @@ db.countries.insert({
 	"name": "Liechtenstein",
 	"a2": "LI",
 	"a3": "LIE",
-	"un": 438
+	"un": 438,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1013,7 +1137,8 @@ db.countries.insert({
 	"name": "Lithuania",
 	"a2": "LT",
 	"a3": "LTU",
-	"un": 440
+	"un": 440,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1021,7 +1146,8 @@ db.countries.insert({
 	"name": "Luxembourg",
 	"a2": "LU",
 	"a3": "LUX",
-	"un": 442
+	"un": 442,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1029,7 +1155,8 @@ db.countries.insert({
 	"name": "Macao",
 	"a2": "MO",
 	"a3": "MAC",
-	"un": 446
+	"un": 446,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1037,7 +1164,8 @@ db.countries.insert({
 	"name": "Macedonia",
 	"a2": "MK",
 	"a3": "MKD",
-	"un": 807
+	"un": 807,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1045,7 +1173,8 @@ db.countries.insert({
 	"name": "Madagascar",
 	"a2": "MG",
 	"a3": "MDG",
-	"un": 450
+	"un": 450,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1053,7 +1182,8 @@ db.countries.insert({
 	"name": "Malawi",
 	"a2": "MW",
 	"a3": "MWI",
-	"un": 454
+	"un": 454,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1061,7 +1191,8 @@ db.countries.insert({
 	"name": "Malaysia",
 	"a2": "MY",
 	"a3": "MYS",
-	"un": 458
+	"un": 458,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1069,7 +1200,8 @@ db.countries.insert({
 	"name": "Maldives",
 	"a2": "MV",
 	"a3": "MDV",
-	"un": 462
+	"un": 462,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1077,7 +1209,8 @@ db.countries.insert({
 	"name": "Mali",
 	"a2": "ML",
 	"a3": "MLI",
-	"un": 466
+	"un": 466,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1085,7 +1218,8 @@ db.countries.insert({
 	"name": "Malta",
 	"a2": "MT",
 	"a3": "MLT",
-	"un": 470
+	"un": 470,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1093,7 +1227,8 @@ db.countries.insert({
 	"name": "Marshall Islands",
 	"a2": "MH",
 	"a3": "MHL",
-	"un": 584
+	"un": 584,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1101,7 +1236,8 @@ db.countries.insert({
 	"name": "Martinique",
 	"a2": "MQ",
 	"a3": "MTQ",
-	"un": 474
+	"un": 474,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1109,7 +1245,8 @@ db.countries.insert({
 	"name": "Mauritania",
 	"a2": "MR",
 	"a3": "MRT",
-	"un": 478
+	"un": 478,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1117,7 +1254,8 @@ db.countries.insert({
 	"name": "Mauritius",
 	"a2": "MU",
 	"a3": "MUS",
-	"un": 480
+	"un": 480,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1125,7 +1263,8 @@ db.countries.insert({
 	"name": "Mayotte",
 	"a2": "YT",
 	"a3": "MYT",
-	"un": 175
+	"un": 175,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1133,7 +1272,8 @@ db.countries.insert({
 	"name": "Mexico",
 	"a2": "MX",
 	"a3": "MEX",
-	"un": 484
+	"un": 484,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1141,7 +1281,8 @@ db.countries.insert({
 	"name": "Micronesia",
 	"a2": "FM",
 	"a3": "FSM",
-	"un": 583
+	"un": 583,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1149,7 +1290,8 @@ db.countries.insert({
 	"name": "Moldova",
 	"a2": "MD",
 	"a3": "MDA",
-	"un": 498
+	"un": 498,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1157,7 +1299,8 @@ db.countries.insert({
 	"name": "Monaco",
 	"a2": "MC",
 	"a3": "MCO",
-	"un": 492
+	"un": 492,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1165,7 +1308,8 @@ db.countries.insert({
 	"name": "Mongolia",
 	"a2": "MN",
 	"a3": "MNG",
-	"un": 496
+	"un": 496,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1173,7 +1317,8 @@ db.countries.insert({
 	"name": "Montenegro",
 	"a2": "ME",
 	"a3": "MNE",
-	"un": 499
+	"un": 499,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1181,7 +1326,8 @@ db.countries.insert({
 	"name": "Montserrat",
 	"a2": "MS",
 	"a3": "MSR",
-	"un": 500
+	"un": 500,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1189,7 +1335,8 @@ db.countries.insert({
 	"name": "Morocco",
 	"a2": "MA",
 	"a3": "MAR",
-	"un": 504
+	"un": 504,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1197,7 +1344,8 @@ db.countries.insert({
 	"name": "Mozambique",
 	"a2": "MZ",
 	"a3": "MOZ",
-	"un": 508
+	"un": 508,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1205,7 +1353,8 @@ db.countries.insert({
 	"name": "Myanmar",
 	"a2": "MM",
 	"a3": "MMR",
-	"un": 104
+	"un": 104,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1213,7 +1362,8 @@ db.countries.insert({
 	"name": "Namibia",
 	"a2": "NA",
 	"a3": "NAM",
-	"un": 516
+	"un": 516,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1221,7 +1371,8 @@ db.countries.insert({
 	"name": "Nauru",
 	"a2": "NR",
 	"a3": "NRU",
-	"un": 520
+	"un": 520,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1229,7 +1380,8 @@ db.countries.insert({
 	"name": "Nepal",
 	"a2": "NP",
 	"a3": "NPL",
-	"un": 524
+	"un": 524,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1237,7 +1389,8 @@ db.countries.insert({
 	"name": "Netherlands",
 	"a2": "NL",
 	"a3": "NLD",
-	"un": 528
+	"un": 528,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1245,7 +1398,8 @@ db.countries.insert({
 	"name": "New Caledonia",
 	"a2": "NC",
 	"a3": "NCL",
-	"un": 540
+	"un": 540,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1253,7 +1407,8 @@ db.countries.insert({
 	"name": "New Zealand",
 	"a2": "NZ",
 	"a3": "NZL",
-	"un": 554
+	"un": 554,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1261,7 +1416,8 @@ db.countries.insert({
 	"name": "Nicaragua",
 	"a2": "NI",
 	"a3": "NIC",
-	"un": 558
+	"un": 558,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1269,7 +1425,8 @@ db.countries.insert({
 	"name": "Niger",
 	"a2": "NE",
 	"a3": "NER",
-	"un": 562
+	"un": 562,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1277,7 +1434,8 @@ db.countries.insert({
 	"name": "Nigeria",
 	"a2": "NG",
 	"a3": "NGA",
-	"un": 566
+	"un": 566,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1285,7 +1443,8 @@ db.countries.insert({
 	"name": "Niue",
 	"a2": "NU",
 	"a3": "NIU",
-	"un": 570
+	"un": 570,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1293,7 +1452,8 @@ db.countries.insert({
 	"name": "Norfolk Island",
 	"a2": "NF",
 	"a3": "NFK",
-	"un": 574
+	"un": 574,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1301,7 +1461,8 @@ db.countries.insert({
 	"name": "Northern Mariana Islands",
 	"a2": "MP",
 	"a3": "MNP",
-	"un": 580
+	"un": 580,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1309,7 +1470,8 @@ db.countries.insert({
 	"name": "Norway",
 	"a2": "NO",
 	"a3": "NOR",
-	"un": 578
+	"un": 578,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1317,7 +1479,8 @@ db.countries.insert({
 	"name": "Oman",
 	"a2": "OM",
 	"a3": "OMN",
-	"un": 512
+	"un": 512,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1325,7 +1488,8 @@ db.countries.insert({
 	"name": "Pakistan",
 	"a2": "PK",
 	"a3": "PAK",
-	"un": 586
+	"un": 586,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1333,7 +1497,8 @@ db.countries.insert({
 	"name": "Palau",
 	"a2": "PW",
 	"a3": "PLW",
-	"un": 585
+	"un": 585,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1341,7 +1506,8 @@ db.countries.insert({
 	"name": "State of Palestine",
 	"a2": "PS",
 	"a3": "PSE",
-	"un": 275
+	"un": 275,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1349,7 +1515,8 @@ db.countries.insert({
 	"name": "Panama",
 	"a2": "PA",
 	"a3": "PAN",
-	"un": 591
+	"un": 591,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1357,7 +1524,8 @@ db.countries.insert({
 	"name": "Papua New Guinea",
 	"a2": "PG",
 	"a3": "PNG",
-	"un": 598
+	"un": 598,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1365,7 +1533,8 @@ db.countries.insert({
 	"name": "Paraguay",
 	"a2": "PY",
 	"a3": "PRY",
-	"un": 600
+	"un": 600,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1373,7 +1542,8 @@ db.countries.insert({
 	"name": "Peru",
 	"a2": "PE",
 	"a3": "PER",
-	"un": 604
+	"un": 604,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1381,7 +1551,8 @@ db.countries.insert({
 	"name": "Philippines",
 	"a2": "PH",
 	"a3": "PHL",
-	"un": 608
+	"un": 608,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1389,7 +1560,8 @@ db.countries.insert({
 	"name": "Pitcairn",
 	"a2": "PN",
 	"a3": "PCN",
-	"un": 612
+	"un": 612,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1397,7 +1569,8 @@ db.countries.insert({
 	"name": "Poland",
 	"a2": "PL",
 	"a3": "POL",
-	"un": 616
+	"un": 616,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1405,7 +1578,8 @@ db.countries.insert({
 	"name": "Portugal",
 	"a2": "PT",
 	"a3": "PRT",
-	"un": 620
+	"un": 620,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1413,7 +1587,8 @@ db.countries.insert({
 	"name": "Puerto Rico",
 	"a2": "PR",
 	"a3": "PRI",
-	"un": 630
+	"un": 630,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1421,7 +1596,8 @@ db.countries.insert({
 	"name": "Qatar",
 	"a2": "QA",
 	"a3": "QAT",
-	"un": 634
+	"un": 634,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1429,7 +1605,8 @@ db.countries.insert({
 	"name": "Romania",
 	"a2": "RO",
 	"a3": "ROU",
-	"un": 642
+	"un": 642,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1437,7 +1614,8 @@ db.countries.insert({
 	"name": "Russian Federation",
 	"a2": "RU",
 	"a3": "RUS",
-	"un": 643
+	"un": 643,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1445,7 +1623,8 @@ db.countries.insert({
 	"name": "Rwanda",
 	"a2": "RW",
 	"a3": "RWA",
-	"un": 646
+	"un": 646,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1453,7 +1632,8 @@ db.countries.insert({
 	"name": "Reunion",
 	"a2": "RE",
 	"a3": "REU",
-	"un": 638
+	"un": 638,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1461,7 +1641,8 @@ db.countries.insert({
 	"name": "Saint Barthalemy",
 	"a2": "BL",
 	"a3": "BLM",
-	"un": 652
+	"un": 652,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1469,7 +1650,8 @@ db.countries.insert({
 	"name": "Saint Helena",
 	"a2": "SH",
 	"a3": "SHN",
-	"un": 654
+	"un": 654,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1477,7 +1659,8 @@ db.countries.insert({
 	"name": "Saint Kitts and Nevis",
 	"a2": "KN",
 	"a3": "KNA",
-	"un": 659
+	"un": 659,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1485,7 +1668,8 @@ db.countries.insert({
 	"name": "Saint Lucia",
 	"a2": "LC",
 	"a3": "LCA",
-	"un": 662
+	"un": 662,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1493,7 +1677,8 @@ db.countries.insert({
 	"name": "Saint Martin (French part)",
 	"a2": "MF",
 	"a3": "MAF",
-	"un": 663
+	"un": 663,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1501,7 +1686,8 @@ db.countries.insert({
 	"name": "Saint Pierre and Miquelon",
 	"a2": "PM",
 	"a3": "SPM",
-	"un": 666
+	"un": 666,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1509,7 +1695,8 @@ db.countries.insert({
 	"name": "Saint Vincent and the Grenadines",
 	"a2": "VC",
 	"a3": "VCT",
-	"un": 670
+	"un": 670,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1517,7 +1704,8 @@ db.countries.insert({
 	"name": "Samoa",
 	"a2": "WS",
 	"a3": "WSM",
-	"un": 882
+	"un": 882,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1525,7 +1713,8 @@ db.countries.insert({
 	"name": "San Marino",
 	"a2": "SM",
 	"a3": "SMR",
-	"un": 674
+	"un": 674,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1533,7 +1722,8 @@ db.countries.insert({
 	"name": "Sao Tome and Principe",
 	"a2": "ST",
 	"a3": "STP",
-	"un": 678
+	"un": 678,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1541,7 +1731,8 @@ db.countries.insert({
 	"name": "Saudi Arabia",
 	"a2": "SA",
 	"a3": "SAU",
-	"un": 682
+	"un": 682,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1549,7 +1740,8 @@ db.countries.insert({
 	"name": "Senegal",
 	"a2": "SN",
 	"a3": "SEN",
-	"un": 686
+	"un": 686,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1557,7 +1749,8 @@ db.countries.insert({
 	"name": "Serbia",
 	"a2": "RS",
 	"a3": "SRB",
-	"un": 688
+	"un": 688,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1565,7 +1758,8 @@ db.countries.insert({
 	"name": "Seychelles",
 	"a2": "SC",
 	"a3": "SYC",
-	"un": 690
+	"un": 690,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1573,7 +1767,8 @@ db.countries.insert({
 	"name": "Sierra Leone",
 	"a2": "SL",
 	"a3": "SLE",
-	"un": 694
+	"un": 694,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1581,7 +1776,8 @@ db.countries.insert({
 	"name": "Singapore",
 	"a2": "SG",
 	"a3": "SGP",
-	"un": 702
+	"un": 702,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1589,7 +1785,8 @@ db.countries.insert({
 	"name": "Saint Martin (Dutch part)",
 	"a2": "SX",
 	"a3": "SXM",
-	"un": 534
+	"un": 534,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1597,7 +1794,8 @@ db.countries.insert({
 	"name": "Slovakia",
 	"a2": "SK",
 	"a3": "SVK",
-	"un": 703
+	"un": 703,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1605,7 +1803,8 @@ db.countries.insert({
 	"name": "Slovenia",
 	"a2": "SI",
 	"a3": "SVN",
-	"un": 705
+	"un": 705,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1613,7 +1812,8 @@ db.countries.insert({
 	"name": "Solomon Islands",
 	"a2": "SB",
 	"a3": "SLB",
-	"un": 90
+	"un": 90,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1621,7 +1821,8 @@ db.countries.insert({
 	"name": "Somalia",
 	"a2": "SO",
 	"a3": "SOM",
-	"un": 706
+	"un": 706,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1629,7 +1830,8 @@ db.countries.insert({
 	"name": "South Africa",
 	"a2": "ZA",
 	"a3": "ZAF",
-	"un": 710
+	"un": 710,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1637,7 +1839,8 @@ db.countries.insert({
 	"name": "South Georgia and the South Sandwich Islands",
 	"a2": "GS",
 	"a3": "SGS",
-	"un": 239
+	"un": 239,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1645,7 +1848,8 @@ db.countries.insert({
 	"name": "South Sudan",
 	"a2": "SS",
 	"a3": "SSD",
-	"un": 728
+	"un": 728,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1653,7 +1857,8 @@ db.countries.insert({
 	"name": "Spain",
 	"a2": "ES",
 	"a3": "ESP",
-	"un": 724
+	"un": 724,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1661,7 +1866,8 @@ db.countries.insert({
 	"name": "Sri Lanka",
 	"a2": "LK",
 	"a3": "LKA",
-	"un": 144
+	"un": 144,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1669,7 +1875,8 @@ db.countries.insert({
 	"name": "Sudan",
 	"a2": "SD",
 	"a3": "SDN",
-	"un": 729
+	"un": 729,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1677,7 +1884,8 @@ db.countries.insert({
 	"name": "Suriname",
 	"a2": "SR",
 	"a3": "SUR",
-	"un": 740
+	"un": 740,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1685,7 +1893,8 @@ db.countries.insert({
 	"name": "Svalbard and Jan Mayen",
 	"a2": "SJ",
 	"a3": "SJM",
-	"un": 744
+	"un": 744,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1693,7 +1902,8 @@ db.countries.insert({
 	"name": "Swaziland",
 	"a2": "SZ",
 	"a3": "SWZ",
-	"un": 748
+	"un": 748,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1701,7 +1911,8 @@ db.countries.insert({
 	"name": "Sweden",
 	"a2": "SE",
 	"a3": "SWE",
-	"un": 752
+	"un": 752,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1709,7 +1920,8 @@ db.countries.insert({
 	"name": "Switzerland",
 	"a2": "CH",
 	"a3": "CHE",
-	"un": 756
+	"un": 756,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1717,7 +1929,8 @@ db.countries.insert({
 	"name": "Syrian Arab Republic",
 	"a2": "SY",
 	"a3": "SYR",
-	"un": 760
+	"un": 760,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1725,7 +1938,8 @@ db.countries.insert({
 	"name": "Taiwan",
 	"a2": "TW",
 	"a3": "TWN",
-	"un": 158
+	"un": 158,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1733,7 +1947,8 @@ db.countries.insert({
 	"name": "Tajikistan",
 	"a2": "TJ",
 	"a3": "TJK",
-	"un": 762
+	"un": 762,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1741,7 +1956,8 @@ db.countries.insert({
 	"name": "United Republic of Tanzania",
 	"a2": "TZ",
 	"a3": "TZA",
-	"un": 834
+	"un": 834,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1749,7 +1965,8 @@ db.countries.insert({
 	"name": "Thailand",
 	"a2": "TH",
 	"a3": "THA",
-	"un": 764
+	"un": 764,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1757,7 +1974,8 @@ db.countries.insert({
 	"name": "Timor-Leste",
 	"a2": "TL",
 	"a3": "TLS",
-	"un": 626
+	"un": 626,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1765,7 +1983,8 @@ db.countries.insert({
 	"name": "Togo",
 	"a2": "TG",
 	"a3": "TGO",
-	"un": 768
+	"un": 768,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1773,7 +1992,8 @@ db.countries.insert({
 	"name": "Tokelau",
 	"a2": "TK",
 	"a3": "TKL",
-	"un": 772
+	"un": 772,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1781,7 +2001,8 @@ db.countries.insert({
 	"name": "Tonga",
 	"a2": "TO",
 	"a3": "TON",
-	"un": 776
+	"un": 776,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1789,7 +2010,8 @@ db.countries.insert({
 	"name": "Trinidad and Tobago",
 	"a2": "TT",
 	"a3": "TTO",
-	"un": 780
+	"un": 780,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1797,7 +2019,8 @@ db.countries.insert({
 	"name": "Tunisia",
 	"a2": "TN",
 	"a3": "TUN",
-	"un": 788
+	"un": 788,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1805,7 +2028,8 @@ db.countries.insert({
 	"name": "Turkey",
 	"a2": "TR",
 	"a3": "TUR",
-	"un": 792
+	"un": 792,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1813,7 +2037,8 @@ db.countries.insert({
 	"name": "Turkmenistan",
 	"a2": "TM",
 	"a3": "TKM",
-	"un": 795
+	"un": 795,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1821,7 +2046,8 @@ db.countries.insert({
 	"name": "Turks and Caicos Islands",
 	"a2": "TC",
 	"a3": "TCA",
-	"un": 796
+	"un": 796,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1829,7 +2055,8 @@ db.countries.insert({
 	"name": "Tuvalu",
 	"a2": "TV",
 	"a3": "TUV",
-	"un": 798
+	"un": 798,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1837,7 +2064,8 @@ db.countries.insert({
 	"name": "Uganda",
 	"a2": "UG",
 	"a3": "UGA",
-	"un": 800
+	"un": 800,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1845,7 +2073,8 @@ db.countries.insert({
 	"name": "Ukraine",
 	"a2": "UA",
 	"a3": "UKR",
-	"un": 804
+	"un": 804,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1853,7 +2082,8 @@ db.countries.insert({
 	"name": "United Arab Emirates",
 	"a2": "AE",
 	"a3": "ARE",
-	"un": 784
+	"un": 784,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1861,7 +2091,8 @@ db.countries.insert({
 	"name": "United Kingdom",
 	"a2": "GB",
 	"a3": "GBR",
-	"un": 826
+	"un": 826,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1869,7 +2100,8 @@ db.countries.insert({
 	"name": "United States",
 	"a2": "US",
 	"a3": "USA",
-	"un": 840
+	"un": 840,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1877,7 +2109,8 @@ db.countries.insert({
 	"name": "United States Minor Outlying Islands",
 	"a2": "UM",
 	"a3": "UMI",
-	"un": 581
+	"un": 581,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1885,7 +2118,8 @@ db.countries.insert({
 	"name": "Uruguay",
 	"a2": "UY",
 	"a3": "URY",
-	"un": 858
+	"un": 858,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1893,7 +2127,8 @@ db.countries.insert({
 	"name": "Uzbekistan",
 	"a2": "UZ",
 	"a3": "UZB",
-	"un": 860
+	"un": 860,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1901,7 +2136,8 @@ db.countries.insert({
 	"name": "Vanuatu",
 	"a2": "VU",
 	"a3": "VUT",
-	"un": 548
+	"un": 548,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1909,7 +2145,8 @@ db.countries.insert({
 	"name": "Venezuela",
 	"a2": "VE",
 	"a3": "VEN",
-	"un": 862
+	"un": 862,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1917,7 +2154,8 @@ db.countries.insert({
 	"name": "Viet Nam",
 	"a2": "VN",
 	"a3": "VNM",
-	"un": 704
+	"un": 704,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1925,7 +2163,8 @@ db.countries.insert({
 	"name": "British Virgin Islands",
 	"a2": "VG",
 	"a3": "VGB",
-	"un": 92
+	"un": 92,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1933,7 +2172,8 @@ db.countries.insert({
 	"name": "US Virgin Islands",
 	"a2": "VI",
 	"a3": "VIR",
-	"un": 850
+	"un": 850,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1941,7 +2181,8 @@ db.countries.insert({
 	"name": "Wallis and Futuna",
 	"a2": "WF",
 	"a3": "WLF",
-	"un": 876
+	"un": 876,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1949,7 +2190,8 @@ db.countries.insert({
 	"name": "Western Sahara",
 	"a2": "EH",
 	"a3": "ESH",
-	"un": 732
+	"un": 732,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1957,7 +2199,8 @@ db.countries.insert({
 	"name": "Yemen",
 	"a2": "YE",
 	"a3": "YEM",
-	"un": 887
+	"un": 887,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1965,7 +2208,8 @@ db.countries.insert({
 	"name": "Zambia",
 	"a2": "ZM",
 	"a3": "ZMB",
-	"un": 894
+	"un": 894,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1973,7 +2217,8 @@ db.countries.insert({
 	"name": "Zimbabwe",
 	"a2": "ZW",
 	"a3": "ZWE",
-	"un": 716
+	"un": 716,
+	"region": ""
 });
 
 db.countries.insert({
@@ -1981,5 +2226,6 @@ db.countries.insert({
 	"name": "Aland Islands",
 	"a2": "AX",
 	"a3": "ALA",
-	"un": 248
+	"un": 248,
+	"region": ""
 });
