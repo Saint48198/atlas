@@ -1831,3 +1831,155 @@ db.countries.insert({
 	"a3": "TUV",
 	"un": 798
 });
+
+db.countries.insert({
+	"id": 230,
+	"name": "Uganda",
+	"a2": "UG",
+	"a3": "UGA",
+	"un": 800
+});
+
+db.countries.insert({
+	"id": 231,
+	"name": "Ukraine",
+	"a2": "UA",
+	"a3": "UKR",
+	"un": 804
+});
+
+db.countries.insert({
+	"id": 232,
+	"name": "United Arab Emirates",
+	"a2": "AE",
+	"a3": "ARE",
+	"un": 784
+});
+
+db.countries.insert({
+	"id": 233,
+	"name": "United Kingdom",
+	"a2": "GB",
+	"a3": "GBR",
+	"un": 826
+});
+
+db.countries.insert({
+	"id": 234,
+	"name": "United States",
+	"a2": "US",
+	"a3": "USA",
+	"un": 840
+});
+
+db.countries.insert({
+	"id": 235,
+	"name": "United States Minor Outlying Islands",
+	"a2": "UM",
+	"a3": "UMI",
+	"un": 581
+});
+
+db.countries.insert({
+	"id": 236,
+	"name": "Uruguay",
+	"a2": "UY",
+	"a3": "URY",
+	"un": 858
+});
+
+db.countries.insert({
+	"id": 237,
+	"name": "Uzbekistan",
+	"a2": "UZ",
+	"a3": "UZB",
+	"un": 860
+});
+
+db.countries.insert({
+	"id": 238,
+	"name": "Vanuatu",
+	"a2": "VU",
+	"a3": "VUT",
+	"un": 548
+});
+
+db.countries.insert({
+	"id": 239,
+	"name": "Venezuela",
+	"a2": "VE",
+	"a3": "VEN",
+	"un": 862
+});
+
+db.countries.insert({
+	"id": 240,
+	"name": "Viet Nam",
+	"a2": "VN",
+	"a3": "VNM",
+	"un": 704
+});
+
+db.countries.insert({
+	"id": 241,
+	"name": "British Virgin Islands",
+	"a2": "VG",
+	"a3": "VGB",
+	"un": 92
+});
+
+db.countries.insert({
+	"id": 242,
+	"name": "US Virgin Islands",
+	"a2": "VI",
+	"a3": "VIR",
+	"un": 850
+});
+
+db.countries.insert({
+	"id": 243,
+	"name": "Wallis and Futuna",
+	"a2": "WF",
+	"a3": "WLF",
+	"un": 876
+});
+
+db.countries.insert({
+	"id": 244,
+	"name": "Western Sahara",
+	"a2": "EH",
+	"a3": "ESH",
+	"un": 732
+});
+
+db.countries.insert({
+	"id": 245,
+	"name": "Yemen",
+	"a2": "YE",
+	"a3": "YEM",
+	"un": 887
+});
+
+db.countries.insert({
+	"id": 246,
+	"name": "Zambia",
+	"a2": "ZM",
+	"a3": "ZMB",
+	"un": 894
+});
+
+db.countries.insert({
+	"id": 247,
+	"name": "Zimbabwe",
+	"a2": "ZW",
+	"a3": "ZWE",
+	"un": 716
+});
+
+db.countries.insert({
+	"id": 248,
+	"name": "Aland Islands",
+	"a2": "AX",
+	"a3": "ALA",
+	"un": 248
+});
