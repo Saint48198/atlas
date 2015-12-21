@@ -1423,3 +1423,299 @@ db.countries.insert({
 	"a3": "QAT",
 	"un": 634
 });
+
+db.countries.insert({
+	"id": 179,
+	"name": "Romania",
+	"a2": "RO",
+	"a3": "ROU",
+	"un": 642
+});
+
+db.countries.insert({
+	"id": 180,
+	"name": "Russian Federation",
+	"a2": "RU",
+	"a3": "RUS",
+	"un": 643
+});
+
+db.countries.insert({
+	"id": 181,
+	"name": "Rwanda",
+	"a2": "RW",
+	"a3": "RWA",
+	"un": 646
+});
+
+db.countries.insert({
+	"id": 182,
+	"name": "Reunion",
+	"a2": "RE",
+	"a3": "REU",
+	"un": 638
+});
+
+db.countries.insert({
+	"id": 183,
+	"name": "Saint Barthalemy",
+	"a2": "BL",
+	"a3": "BLM",
+	"un": 652
+});
+
+db.countries.insert({
+	"id": 184,
+	"name": "Saint Helena",
+	"a2": "SH",
+	"a3": "SHN",
+	"un": 654
+});
+
+db.countries.insert({
+	"id": 185,
+	"name": "Saint Kitts and Nevis",
+	"a2": "KN",
+	"a3": "KNA",
+	"un": 659
+});
+
+db.countries.insert({
+	"id": 186,
+	"name": "Saint Lucia",
+	"a2": "LC",
+	"a3": "LCA",
+	"un": 662
+});
+
+db.countries.insert({
+	"id": 187,
+	"name": "Saint Martin (French part)",
+	"a2": "MF",
+	"a3": "MAF",
+	"un": 663
+});
+
+db.countries.insert({
+	"id": 188,
+	"name": "Saint Pierre and Miquelon",
+	"a2": "PM",
+	"a3": "SPM",
+	"un": 666
+});
+
+db.countries.insert({
+	"id": 189,
+	"name": "Saint Vincent and the Grenadines",
+	"a2": "VC",
+	"a3": "VCT",
+	"un": 670
+});
+
+db.countries.insert({
+	"id": 190,
+	"name": "Samoa",
+	"a2": "WS",
+	"a3": "WSM",
+	"un": 882
+});
+
+db.countries.insert({
+	"id": 191,
+	"name": "San Marino",
+	"a2": "SM",
+	"a3": "SMR",
+	"un": 674
+});
+
+db.countries.insert({
+	"id": 192,
+	"name": "Sao Tome and Principe",
+	"a2": "ST",
+	"a3": "STP",
+	"un": 678
+});
+
+db.countries.insert({
+	"id": 193,
+	"name": "Saudi Arabia",
+	"a2": "SA",
+	"a3": "SAU",
+	"un": 682
+});
+
+db.countries.insert({
+	"id": 194,
+	"name": "Senegal",
+	"a2": "SN",
+	"a3": "SEN",
+	"un": 686
+});
+
+db.countries.insert({
+	"id": 195,
+	"name": "Serbia",
+	"a2": "RS",
+	"a3": "SRB",
+	"un": 688
+});
+
+db.countries.insert({
+	"id": 196,
+	"name": "Seychelles",
+	"a2": "SC",
+	"a3": "SYC",
+	"un": 690
+});
+
+db.countries.insert({
+	"id": 197,
+	"name": "Sierra Leone",
+	"a2": "SL",
+	"a3": "SLE",
+	"un": 694
+});
+
+db.countries.insert({
+	"id": 198,
+	"name": "Singapore",
+	"a2": "SG",
+	"a3": "SGP",
+	"un": 702
+});
+
+db.countries.insert({
+	"id": 199,
+	"name": "Saint Martin (Dutch part)",
+	"a2": "SX",
+	"a3": "SXM",
+	"un": 534
+});
+
+db.countries.insert({
+	"id": 200,
+	"name": "Slovakia",
+	"a2": "SK",
+	"a3": "SVK",
+	"un": 703
+});
+
+db.countries.insert({
+	"id": 201,
+	"name": "Slovenia",
+	"a2": "SI",
+	"a3": "SVN",
+	"un": 705
+});
+
+db.countries.insert({
+	"id": 202,
+	"name": "Solomon Islands",
+	"a2": "SB",
+	"a3": "SLB",
+	"un": 90
+});
+
+db.countries.insert({
+	"id": 203,
+	"name": "Somalia",
+	"a2": "SO",
+	"a3": "SOM",
+	"un": 706
+});
+
+db.countries.insert({
+	"id": 204,
+	"name": "South Africa",
+	"a2": "ZA",
+	"a3": "ZAF",
+	"un": 710
+});
+
+db.countries.insert({
+	"id": 205,
+	"name": "South Georgia and the South Sandwich Islands",
+	"a2": "GS",
+	"a3": "SGS",
+	"un": 239
+});
+
+db.countries.insert({
+	"id": 206,
+	"name": "South Sudan",
+	"a2": "SS",
+	"a3": "SSD",
+	"un": 728
+});
+
+db.countries.insert({
+	"id": 207,
+	"name": "Spain",
+	"a2": "ES",
+	"a3": "ESP",
+	"un": 724
+});
+
+db.countries.insert({
+	"id": 208,
+	"name": "Sri Lanka",
+	"a2": "LK",
+	"a3": "LKA",
+	"un": 144
+});
+
+db.countries.insert({
+	"id": 209,
+	"name": "Sudan",
+	"a2": "SD",
+	"a3": "SDN",
+	"un": 729
+});
+
+db.countries.insert({
+	"id": 210,
+	"name": "Suriname",
+	"a2": "SR",
+	"a3": "SUR",
+	"un": 740
+});
+
+db.countries.insert({
+	"id": 211,
+	"name": "Svalbard and Jan Mayen",
+	"a2": "SJ",
+	"a3": "SJM",
+	"un": 744
+});
+
+db.countries.insert({
+	"id": 212,
+	"name": "Swaziland",
+	"a2": "SZ",
+	"a3": "SWZ",
+	"un": 748
+});
+
+db.countries.insert({
+	"id": 213,
+	"name": "Sweden",
+	"a2": "SE",
+	"a3": "SWE",
+	"un": 752
+});
+
+db.countries.insert({
+	"id": 214,
+	"name": "Switzerland",
+	"a2": "CH",
+	"a3": "CHE",
+	"un": 756
+});
+
+db.countries.insert({
+	"id": 215,
+	"name": "Syrian Arab Republic",
+	"a2": "SY",
+	"a3": "SYR",
+	"un": 760
+});
