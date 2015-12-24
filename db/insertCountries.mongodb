@@ -1,3 +1,5 @@
+db.createCollection(countries);
+
 db.countries.insert({
 	"id": 0,
 	"name": "Afghanistan",
@@ -2233,7 +2235,7 @@ db.countries.insert({
 
 db.countries.insert({
 	"id": 249,
-	"name": "Bosnia and Herzegovina",
+	"name": "Bosnia &amp; Herzegovina",
 	"a2": "BA",
 	"a3": "BIH",
 	"un": 070,
