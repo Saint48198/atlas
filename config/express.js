@@ -13,12 +13,13 @@ module.exports = function(app, config) {
   var env = process.env.NODE_ENV || 'development';
   app.locals.ENV = env;
   app.locals.ENV_DEVELOPMENT = env == 'development';
-  
+
   app.engine('handlebars', exphbs({
     layoutsDir: config.root + '/app/views/layouts/',
     defaultLayout: 'main',
     partialsDir: [config.root + '/app/views/partials/']
   }));
+
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'handlebars');
 
@@ -33,8 +34,9 @@ module.exports = function(app, config) {
   app.use(express.static(config.root + '/public'));
   app.use(methodOverride());
 
-  var controllers = glob.sync(config.root + '/app/controllers/*.js');
-  controllers.forEach(function (controller) {
+  var routes = glob.sync(config.root + '/app/routes/*.js');
+
+  routes.forEach(function (controller) {
     require(controller)(app);
   });
 
@@ -43,7 +45,7 @@ module.exports = function(app, config) {
     err.status = 404;
     next(err);
   });
-  
+
   if(app.get('env') === 'development'){
     app.use(function (err, req, res, next) {
       res.status(err.status || 500);
