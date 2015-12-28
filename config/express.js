@@ -9,7 +9,7 @@ var compress = require('compression');
 var methodOverride = require('method-override');
 var exphbs  = require('express-handlebars');
 
-module.exports = function(app, config) {
+module.exports = function(app, config, db) {
   var env = process.env.NODE_ENV || 'development';
   app.locals.ENV = env;
   app.locals.ENV_DEVELOPMENT = env == 'development';
@@ -37,7 +37,7 @@ module.exports = function(app, config) {
   var routes = glob.sync(config.root + '/app/routes/*.js');
 
   routes.forEach(function (controller) {
-    require(controller)(app);
+    require(controller)(app, db);
   });
 
   app.use(function (req, res, next) {

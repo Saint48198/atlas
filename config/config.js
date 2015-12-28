@@ -6,28 +6,28 @@ var config = {
   development: {
     root: rootPath,
     app: {
-      name: 'nodeplay'
+      name: 'atlas'
     },
     port: 3000,
-    db: 'mongodb://localhost/nodeplay-development'
+    db: 'mongodb://localhost/atlas'
   },
 
   test: {
     root: rootPath,
     app: {
-      name: 'nodeplay'
+      name: 'atlas'
     },
     port: 3000,
-    db: 'mongodb://localhost/nodeplay-test'
+    db: 'mongodb://localhost/atlas'
   },
 
   production: {
     root: rootPath,
     app: {
-      name: 'nodeplay'
+      name: 'atlas'
     },
     port: 3000,
-    db: 'mongodb://localhost/nodeplay-production'
+    db: 'mongodb://localhost/atlas'
   }
 };
 
