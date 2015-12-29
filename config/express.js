@@ -32,6 +32,7 @@ module.exports = function(app, config, db) {
   app.use(cookieParser());
   app.use(compress());
   app.use(express.static(config.root + '/public'));
+  app.use(express.static(config.root + '/node_modules'));
   app.use(methodOverride());
 
   var routes = glob.sync(config.root + '/app/routes/*.js');

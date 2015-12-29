@@ -1,5 +1,11 @@
 node_modules/
-public/components
-.sass-cache
+public/components/
+public/js/
+.sass-cache/
+.tscache/
+bin/
 .idea
 *.css.map
+*.js.map
+.baseDir.ts
+public/ts/*.js

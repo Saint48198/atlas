@@ -24,6 +24,20 @@ module.exports = function (grunt) {
         }
       }
     },
+    ts: {
+      options: {
+        declaration: true,
+        noImplicitAny: true,
+        moduleResolution: "node",
+        emitDecoratorMetadata: true,
+        module: 'commonjs',                 // target javascript module style. [amd (default) | commonjs]
+        experimentalDecorators: true
+      },
+      default : {
+        src: ["public/ts/**/*.ts"],
+        outDir: "public/js"
+      }
+    },
     watch: {
       options: {
         nospawn: true,
@@ -33,9 +47,10 @@ module.exports = function (grunt) {
         files: [
           'app.js',
           'app/**/*.js',
-          'config/*.js'
+          'config/*.js',
+          '**/*.ts'
         ],
-        tasks: ['develop', 'delayed-livereload']
+        tasks: ['ts', 'develop', 'delayed-livereload']
       },
       css: {
         files: [
@@ -55,6 +70,9 @@ module.exports = function (grunt) {
       }
     }
   });
+
+  // typescript
+  grunt.loadNpmTasks("grunt-ts");
 
   grunt.config.requires('watch.js.files');
   files = grunt.config('watch.js.files');
@@ -76,6 +94,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'sass',
+    'ts',
     'develop',
     'watch'
   ]);
