@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         noImplicitAny: true,
         moduleResolution: "node",
         emitDecoratorMetadata: true,
-        module: 'commonjs',                 // target javascript module style. [amd (default) | commonjs]
+        module: 'system',                 // target javascript module style. [amd (default) | commonjs]
         experimentalDecorators: true
       },
       default : {
