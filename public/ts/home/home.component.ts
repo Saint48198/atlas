@@ -2,8 +2,8 @@ import {Component} from 'angular2/core';
 import {StateService} from '../common/state.service';
 
 @Component({
-  selector: 'content',
-  templateUrl: '../../../templates/home/home.component.html'
+  selector: 'home',
+  templateUrl: '../../templates/home/home.component.html'
 })
 export class HomeComponent {
   title: string = 'Home Page';

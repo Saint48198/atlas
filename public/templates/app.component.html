@@ -1,2 +1,21 @@
-<h1>My First Angular 2 App</h1>
-<conent></conent>
+<header>
+  <div>
+    <a [routerLink]="['/Home']">atlas</a>
+  </div>
+  <nav>
+    <ul id="menu">
+      <li><a [routerLink]="['/Home']">Home</a></li>
+      <li><a [routerLink]="['/About']">About</a></li>
+      <li><a [routerLink]="['/Experiments']">Experiments</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="shadow"></div>
+  <div id="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+<footer>
+  &copy; 2016 scott Daniels
+</footer>
