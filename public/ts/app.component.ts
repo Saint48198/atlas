@@ -12,8 +12,8 @@ import {StateService} from './common/state.service';
   providers: [ StateService ]
 })
 @RouteConfig([
-  { path: '/',            name: 'Home',        component: HomeComponent, useAsDefault: true },
-  { path: '/about',       name: 'About',       component: AboutComponent },
-  { path: '/experiments', name: 'Experiments', component: ExperimentsComponent }
+  { path: '/',            name: 'Home',        component: HomeComponent,        useAsDefault: true  },
+  { path: '/about',       name: 'About',       component: AboutComponent                            },
+  { path: '/experiments', name: 'Experiments', component: ExperimentsComponent                      }
 ])
-export class AppComponent {}
+export class AppComponent { }
