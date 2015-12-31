@@ -16,4 +16,4 @@ import {StateService} from './common/state.service';
   { path: '/about',       name: 'About',       component: AboutComponent                            },
   { path: '/experiments', name: 'Experiments', component: ExperimentsComponent                      }
 ])
-export class AppComponent { }
+export class AppComponent {}
