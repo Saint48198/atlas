@@ -5,7 +5,8 @@ var mongoose = require('mongoose'),
 
 var RegionSchema = new Schema({
   id: Number,
-  name: String
+  name: String,
+  code: String
 });
 
 RegionSchema.virtual('date')

@@ -6,10 +6,11 @@ var mongoose = require('mongoose'),
 var CountrySchema = new Schema({
   id: Number,
   name: String,
+  displayName: String,
   code2: String,
   code3: String,
-  num: Number,
-  region: Number
+  num: String,
+  region: String
 });
 
 //id: 0, name: "Afghanistan", code2: "AF", code3: "AFG", num: 004, region: 034
