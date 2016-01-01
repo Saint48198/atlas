@@ -35,7 +35,7 @@ module.exports = function(app, config, db) {
   app.use(express.static(config.root + '/node_modules'));
   app.use(methodOverride());
 
-  var routes = glob.sync(config.root + '/app/routes/*.js');
+  var routes = glob.sync(config.root + '/app/routes/**/*.js');
 
   routes.forEach(function (controller) {
     require(controller)(app, db);
