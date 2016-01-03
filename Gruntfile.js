@@ -27,14 +27,14 @@ module.exports = function (grunt) {
     ts: {
       options: {
         declaration: true,
-        noImplicitAny: true,
+        noImplicitAny: false,
         moduleResolution: "node",
         emitDecoratorMetadata: true,
         module: 'system',                 // target javascript module style. [amd (default) | commonjs]
         experimentalDecorators: true
       },
       default : {
-        src: ["public/ts/**/*.ts"],
+        src: ["public/ts/**/*.ts", "public/ts/**/**/*.ts"],
         outDir: "public/js"
       }
     },

@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {StateService} from '../common/state.service';
+import {GoogleMapComponent} from '../common/google-map/google-map.component';
 
 @Component({
   selector: 'home',
@@ -9,19 +9,16 @@ export class HomeComponent {
   title: string = 'Home Page';
   body:  string = 'This is the about home body';
 
-  constructor(private _StateService: StateService) { }
+  constructor() {}
 
   ngAfterViewInit() {
-
-  }
-
-  updateMessage(m: string): void {
-    this._StateService.setMessage(m);
+    var map = new GoogleMapComponent({});
   }
 }
 
 /*
-
+ <!-- google api -->
+ <script src='http://www.google.com/jsapi'></script>
  <script type='text/javascript'>google.load('container-map', '1', {'packages': ['geochart']});
  google.setOnLoadCallback(drawVisualization);
 
