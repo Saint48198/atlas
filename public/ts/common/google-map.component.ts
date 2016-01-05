@@ -23,12 +23,10 @@ export class GoogleMapComponent {
     data.addColumn('number', 'Value');
     data.addColumn({type:'string', role:'tooltip'});
     let ivalue = {};
-    let i = 0;
 
-    this.mapData.forEach(function (value) {
-      data.addRows([[{v:value.code, f:value.name }, i, '']]);
+    this.mapData.forEach(function (value, index) {
+      data.addRows([[{v:value.code, f:value.name }, index, '']]);
       ivalue[value.code] = '';
-      i++;
     });
 
     let chart = new google.visualization.GeoChart(document.getElementById('container-map'));
