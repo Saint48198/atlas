@@ -1,24 +1,26 @@
 import {Injectable} from 'angular2/core';
 import {Region} from './region.model';
-
-declare var fetch: any;
+import {EasyFetch} from './easy-fetch'
 
 @Injectable()
 export class RegionService {
   private regions: Region[] = [];
 
-  getRegions(): Region[] {
-    var data = fetch('/api/region', {
-      method: 'GET',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    })
-    .then((response) => {
-      console.log(response)
-      return response;
+  constructor() {
+    let self = this;
+    new EasyFetch().getJSON({
+      url: '/api/region',
+      cacheBusting: true
+    }).then(function (data) {// on success
+      self.regions =  data['resp'];
+    }, function (error) {// on reject
+      console.error('An error occured!');
+      console.error(error.message ? error.message : error);
+      self.regions = [];
     });
-    return data;
-  };
+  }
+
+  getRegions(): Region[] {
+    return this.regions;
+  }
 }
