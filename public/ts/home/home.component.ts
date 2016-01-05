@@ -4,6 +4,8 @@ import {GoogleMapComponent} from '../common/google-map.component';
 import {Region} from '../common/region.model';
 import {RegionService} from '../common/region.service';
 
+const colorValues: Array = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', '#d7dcdd', '#add8c8', '#bbccdd', '#79f2c4', '#aabbdd', '#8899aa', '#00b6e5', '#887711', '#229966', '#886611', '#3f7f67', '#0085a8', '#555577', '#3d494c', '#005566', '#005166', '#113388', '#113388', '#002833', '#002211', '#101111'];
+
 @Component({
   selector: 'home',
   templateUrl: '../../templates/home/home.component.html'
@@ -16,12 +18,23 @@ export class HomeComponent {
   constructor(private _RegionService: RegionService) {}
 
   ngOnInit() {
-    this.regions = this._RegionService.getRegions();
+    this._RegionService.fetch(
+      () => {
+        this.renderMap();
+      },
+      () => {
+        console.log('error');
+      }
+    );
   }
 
   ngAfterViewInit() {
+  }
+
+  renderMap() {
+    console.log(this);
     var options = {
-      colorAxis:  {minValue: 0, maxValue: 0,  colors: []},
+      colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
       legend: 'none',
       backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
       datalessRegionColor: '#f5f5f5',
@@ -33,6 +46,7 @@ export class HomeComponent {
       keepAspectRatio: true,
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
-    var map = new GoogleMapComponent(options, this.regions);
+
+    var map = new GoogleMapComponent(options, this._RegionService.getRegions());
   }
 }

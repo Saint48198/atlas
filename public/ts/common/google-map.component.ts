@@ -18,16 +18,20 @@ export class GoogleMapComponent {
   }
 
   drawVisualization() {
-    var data = new google.visualization.DataTable();
+    let data = new google.visualization.DataTable();
     data.addColumn('string', 'Country');
     data.addColumn('number', 'Value');
     data.addColumn({type:'string', role:'tooltip'});
+    let ivalue = {};
+    let i = 0;
 
-    var ivalue = {};
+    this.mapData.forEach(function (value) {
+      data.addRows([[{v:value.code, f:value.name }, i, '']]);
+      ivalue[value.code] = '';
+      i++;
+    });
 
-    console.log(this.mapData);
-
-    var chart = new google.visualization.GeoChart(document.getElementById('container-map'));
+    let chart = new google.visualization.GeoChart(document.getElementById('container-map'));
     chart.draw(data, this.options);
   }
 }
