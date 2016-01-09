@@ -36,10 +36,13 @@ export class GoogleMapComponent implements OnInit {
       ivalue[value.code] = '/region?id=' + value.code;
     });
 
-    let chart = new google.visualization.GeoChart(document.getElementById('container-map'));
-    chart.draw(data, this.options);
+    let container = document.getElementById('container-map');
+    if (container) {
+      let map = new google.visualization.GeoChart(document.getElementById('container-map'));
+      map.draw(data, this.options);
 
-    google.visualization.events.addListener(chart, 'regionClick', this.handleMapClick.bind(this));
+      google.visualization.events.addListener(map, 'regionClick', this.handleMapClick.bind(this));
+    }
   }
 
   handleMapClick(e) {

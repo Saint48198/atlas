@@ -16,17 +16,19 @@ export class HomeComponent implements OnInit {
   body:  string = 'Welcome to Atlas, the place you learn about the world.';
   regions: Region[];
 
-  constructor(private _router: Router, private _RegionService: RegionService) {}
+  constructor(
+    private _router: Router,
+    private _RegionService: RegionService) {}
 
   ngOnInit() {
-    this._RegionService.fetch(
-      () => {
+    this._RegionService.fetch({
+      successCallback: () => {
         this.renderMap();
       },
-      () => {
+      errorCallback: () => {
         console.log('error');
       }
-    );
+    });
   }
 
   ngAfterViewInit() {
@@ -47,7 +49,7 @@ export class HomeComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    var map = new GoogleMapComponent(options, this._RegionService.getRegions(), this._router);
+    var map = new GoogleMapComponent(options, this._RegionService.getRegion(), this._router);
     map.ngOnInit();
   }
 }
