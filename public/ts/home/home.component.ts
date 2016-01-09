@@ -1,4 +1,5 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
 import {NgFor} from 'angular2/common';
 import {GoogleMapComponent} from '../common/google-map.component';
 import {Region} from '../common/region.model';
@@ -10,12 +11,12 @@ const colorValues: Array = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', '#d7dcdd
   selector: 'home',
   templateUrl: '../../templates/home/home.component.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   title: string = 'Atlas';
   body:  string = 'Welcome to Atlas, the place you learn about the world.';
   regions: Region[];
 
-  constructor(private _RegionService: RegionService) {}
+  constructor(private _router: Router, private _RegionService: RegionService) {}
 
   ngOnInit() {
     this._RegionService.fetch(
@@ -32,7 +33,6 @@ export class HomeComponent {
   }
 
   renderMap() {
-    console.log(this);
     var options = {
       colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
       legend: 'none',
@@ -47,6 +47,7 @@ export class HomeComponent {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    var map = new GoogleMapComponent(options, this._RegionService.getRegions());
+    var map = new GoogleMapComponent(options, this._RegionService.getRegions(), this._router);
+    map.ngOnInit();
   }
 }

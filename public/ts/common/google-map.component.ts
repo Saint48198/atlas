@@ -1,4 +1,5 @@
-import {Component, Input} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
 
 declare var google: any;
 
@@ -7,13 +8,19 @@ declare var google: any;
   templateUrl: '../../../templates/google-map/google-map.html'
 })
 
-export class GoogleMapComponent {
+export class GoogleMapComponent implements OnInit {
   options: {};
   mapData: {};
 
-  constructor(options: Object, data: Object) {
-    this.options = options;
-    this.mapData = data;
+  constructor(
+    options: Object,
+    data: Object,
+    private _router: Router) {
+      this.options = options;
+      this.mapData = data;
+  }
+
+  ngOnInit() {
     this.drawVisualization();
   }
 
@@ -26,10 +33,16 @@ export class GoogleMapComponent {
 
     this.mapData.forEach(function (value, index) {
       data.addRows([[{v:value.code, f:value.name }, index, '']]);
-      ivalue[value.code] = '';
+      ivalue[value.code] = '/region?id=' + value.code;
     });
 
     let chart = new google.visualization.GeoChart(document.getElementById('container-map'));
     chart.draw(data, this.options);
+
+    google.visualization.events.addListener(chart, 'regionClick', this.handleMapClick.bind(this));
+  }
+
+  handleMapClick(e) {
+    this._router.navigate(['Region', { id: e.region }]);
   }
 }
