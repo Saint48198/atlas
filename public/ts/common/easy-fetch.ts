@@ -52,9 +52,9 @@ export class EasyFetch {
 
   getJSON(params: Object) {
     let url = params['url'];
-    if (params['url'].split('?').length && params['cacheBusting']) {
+    if (params['url'].split('?').length > 1 && params['cacheBusting']) {
       url = params['url'] + '&' + new Date().getTime();
-    } else if (!params['url'].split('?').length && params['cacheBusting']) {
+    } else if (params['url'].split('?').length == 1 && params['cacheBusting']) {
       url = params['url'] + '?' + new Date().getTime();
     }
 

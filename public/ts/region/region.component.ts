@@ -13,8 +13,8 @@ const colorValues: Array<string> = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', 
   templateUrl: '../../templates/region/region.component.html'
 })
 export class RegionComponent implements OnInit {
-  title: string = 'Region Page';
-  body:  string = 'This is the about about body';
+  title: string = '';
+  body:  string = 'Select a country using the map or from the list below.';
   regions: Region[];
   countries: Country[];
   id: string;
@@ -30,13 +30,15 @@ export class RegionComponent implements OnInit {
 
     this._RegionService.fetch(
       () => {
+        this.title = this._RegionService.getRegion()[0]['name'];
         this._CountryService.fetch(
           () => {
-            this.renderMap();
+            this.renderMap(this._CountryService.getCountry());
           },
           () => {
             console.log('error');
           },
+          null,
           this.id
         );
       },
@@ -50,7 +52,8 @@ export class RegionComponent implements OnInit {
   ngAfterViewInit() {
   }
 
-  renderMap() {
+  renderMap(data: Array<Object>) {
+    console.log(data);
     let options = {
       colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
       legend: 'none',
@@ -65,7 +68,7 @@ export class RegionComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    let map = new GoogleMapComponent(options, [], this._router);
+    let map = new GoogleMapComponent(options, data, this._router);
     map.ngOnInit();
   }
 }

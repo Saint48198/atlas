@@ -32,8 +32,15 @@ export class GoogleMapComponent implements OnInit {
     let ivalue = {};
 
     this.mapData.forEach((value, index) => {
-      data.addRows([[{v:value['code'], f:value['name'] }, index, '']]);
-      ivalue[value['code']] = '/region?id=' + value['code'];
+      let code = value['code'];
+      let name = value['name'];
+
+      if (code === undefined) {
+        code = value['code2'];
+      }
+
+      data.addRows([[{v:code, f:name }, index, '']]);
+      ivalue[code] = '/region?id=' + code;
     });
 
     let container = document.getElementById('container-map');

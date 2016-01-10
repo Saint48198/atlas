@@ -27,7 +27,7 @@ router.get('/api/region', function (req, res, next) {
     });
   } else if (code != undefined){
     queryValue.code = code;
-    console.log(code);
+
     Region.find(queryValue, function (err, regions) {
       if (!err) {
         json.resp = regions;
