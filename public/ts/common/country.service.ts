@@ -8,7 +8,7 @@ export class CountryService {
 
   constructor() {}
 
-  fetch(successCallback:Function, errorCallback:Function, id?:String, region?:String) {
+  fetch(successCallback:Function, errorCallback:Function, id?:String, region?:String, code?: String) {
     let self = this;
     let url = '/api/country';
 
@@ -18,6 +18,10 @@ export class CountryService {
 
     if (id) {
       url = url + '?id=' + id;
+    }
+
+    if (code) {
+      url = url + '?code=' + code;
     }
 
     new EasyFetch().getJSON({
