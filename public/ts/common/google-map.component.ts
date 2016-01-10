@@ -9,12 +9,12 @@ declare var google: any;
 })
 
 export class GoogleMapComponent implements OnInit {
-  options: {};
-  mapData: {};
+  options: Object;
+  mapData: Array<Object>;
 
   constructor(
     options: Object,
-    data: Object,
+    data: Array<Object>,
     private _router: Router) {
       this.options = options;
       this.mapData = data;
@@ -31,9 +31,9 @@ export class GoogleMapComponent implements OnInit {
     data.addColumn({type:'string', role:'tooltip'});
     let ivalue = {};
 
-    this.mapData.forEach(function (value, index) {
-      data.addRows([[{v:value.code, f:value.name }, index, '']]);
-      ivalue[value.code] = '/region?id=' + value.code;
+    this.mapData.forEach((value, index) => {
+      data.addRows([[{v:value['code'], f:value['name'] }, index, '']]);
+      ivalue[value['code']] = '/region?id=' + value['code'];
     });
 
     let container = document.getElementById('container-map');

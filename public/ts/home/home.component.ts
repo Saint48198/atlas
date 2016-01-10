@@ -5,7 +5,7 @@ import {GoogleMapComponent} from '../common/google-map.component';
 import {Region} from '../common/region.model';
 import {RegionService} from '../common/region.service';
 
-const colorValues: Array = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', '#d7dcdd', '#add8c8', '#bbccdd', '#79f2c4', '#aabbdd', '#8899aa', '#00b6e5', '#887711', '#229966', '#886611', '#3f7f67', '#0085a8', '#555577', '#3d494c', '#005566', '#005166', '#113388', '#113388', '#002833', '#002211', '#101111'];
+const colorValues: Array<string> = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', '#d7dcdd', '#add8c8', '#bbccdd', '#79f2c4', '#aabbdd', '#8899aa', '#00b6e5', '#887711', '#229966', '#886611', '#3f7f67', '#0085a8', '#555577', '#3d494c', '#005566', '#005166', '#113388', '#113388', '#002833', '#002211', '#101111'];
 
 @Component({
   selector: 'home',
@@ -21,14 +21,14 @@ export class HomeComponent implements OnInit {
     private _RegionService: RegionService) {}
 
   ngOnInit() {
-    this._RegionService.fetch({
-      successCallback: () => {
+    this._RegionService.fetch(
+      () => {
         this.renderMap();
       },
-      errorCallback: () => {
+      () => {
         console.log('error');
       }
-    });
+    );
   }
 
   ngAfterViewInit() {

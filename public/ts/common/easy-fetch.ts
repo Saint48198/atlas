@@ -34,7 +34,7 @@ export class EasyFetch {
     return wrappedPromise;
   }
 
-  getWrappedFetch() {
+  getWrappedFetch(url:String, options:Object) {
     var wrappedPromise = this.getWrappedPromise();
     var args = Array.prototype.slice.call(arguments);// arguments to Array
 
@@ -51,10 +51,17 @@ export class EasyFetch {
   }
 
   getJSON(params: Object) {
+    let url = params['url'];
+    if (params['url'].split('?').length && params['cacheBusting']) {
+      url = params['url'] + '&' + new Date().getTime();
+    } else if (!params['url'].split('?').length && params['cacheBusting']) {
+      url = params['url'] + '?' + new Date().getTime();
+    }
+
     var wrappedFetch = this.getWrappedFetch(
-      params['cacheBusting'] ? params['url'] + '?' + new Date().getTime() : params['url'],
+      url,
       {
-        method: 'get',// optional, "GET" is default value
+        method: 'GET',// optional, "GET" is default value
         headers: {
           'Accept': 'application/json'
         }

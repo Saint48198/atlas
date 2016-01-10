@@ -6,12 +6,13 @@ import {HomeComponent} from './home/home.component';
 import {RegionComponent} from './region/region.component';
 import {CountryComponent} from './country/country.component';
 import {RegionService} from './common/region.service';
+import {CountryService} from './common/country.service';
 
 @Component({
   selector: 'app',
   templateUrl: '../../templates/app.component.html',
   directives: [ ROUTER_DIRECTIVES ],
-  providers: [RegionService]
+  providers: [RegionService, CountryService]
 })
 @RouteConfig([
   { path: '/',            name: 'Home',        component: HomeComponent,        useAsDefault: true  },
