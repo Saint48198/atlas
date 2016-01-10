@@ -30,6 +30,7 @@ export class GoogleMapComponent implements OnInit {
     data.addColumn('number', 'Value');
     data.addColumn({type:'string', role:'tooltip'});
     let ivalue = {};
+    let type = 'Region';
 
     this.mapData.forEach((value, index) => {
       let code = value['code'];
@@ -37,10 +38,11 @@ export class GoogleMapComponent implements OnInit {
 
       if (code === undefined) {
         code = value['code2'];
+        type = 'Country';
       }
 
       data.addRows([[{v:code, f:name }, index, '']]);
-      ivalue[code] = '/region?id=' + code;
+      ivalue[code] = '';
     });
 
     let container = document.getElementById('container-map');
@@ -48,11 +50,11 @@ export class GoogleMapComponent implements OnInit {
       let map = new google.visualization.GeoChart(document.getElementById('container-map'));
       map.draw(data, this.options);
 
-      google.visualization.events.addListener(map, 'regionClick', this.handleMapClick.bind(this));
+      google.visualization.events.addListener(map, 'regionClick', this.handleMapClick.bind(this, type));
     }
   }
 
-  handleMapClick(e) {
-    this._router.navigate(['Region', { id: e.region }]);
+  handleMapClick(type, e) {
+    this._router.navigate([type, { id: e.region }]);
   }
 }
