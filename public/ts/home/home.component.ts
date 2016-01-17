@@ -9,26 +9,24 @@ const colorValues: Array<string> = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', 
 
 @Component({
   selector: 'home',
-  templateUrl: '../../templates/home/home.component.html'
+  providers: [RegionService],
+  templateUrl: '../../templates/home/home.component.html',
+  bindings: [RegionService]
 })
 export class HomeComponent implements OnInit {
   title: string = 'Atlas';
   body:  string = 'Welcome to Atlas, the place you learn about the world.';
-  regions: Region[];
+  regions: Array<Region>;
 
-  constructor(
-    private _router: Router,
-    private _RegionService: RegionService) {}
+  constructor(private _router: Router, private _RegionService: RegionService) {
+    _RegionService.getRegion().subscribe((res) => {
+      this.regions = res.json()['resp'];
+      this.renderMap();
+    });
+  }
 
   ngOnInit() {
-    this._RegionService.fetch(
-      () => {
-        this.renderMap();
-      },
-      () => {
-        console.log('error');
-      }
-    );
+
   }
 
   ngAfterViewInit() {
@@ -49,7 +47,7 @@ export class HomeComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    var map = new GoogleMapComponent(options, this._RegionService.getRegion(), this._router);
+    var map = new GoogleMapComponent(options, this.regions, this._router);
     map.ngOnInit();
   }
 }

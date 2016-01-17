@@ -15,38 +15,31 @@ const colorValues: Array<string> = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', 
 export class RegionComponent implements OnInit {
   title: string = '';
   body:  string = 'Select a country using the map or from the list below.';
-  regions: Region[];
-  countries: Country[];
+  regions: Array<any>;
+  countries: Array<any>;
   id: string;
+  promise: Promise<Function>;
 
-  constructor(
-    private _router: Router,
-    private _routeParams: RouteParams,
-    private _RegionService: RegionService,
-    private _CountryService: CountryService) {}
+  constructor(private _router: Router,
+              private _routeParams: RouteParams,
+              private _RegionService: RegionService,
+              private _CountryService: CountryService) {
+
+
+    this.id = _routeParams.get('id');
+
+    _RegionService.getRegion().toPromise().then((data) =>{
+      this.regions =  data.json()['resp'];
+      _CountryService.getCountry().subscribe((data) => {
+        this.regions = data.json()['resp'];
+        this.renderMap([{}]);
+      });
+    });
+
+  }
 
   ngOnInit() {
-    this.id = this._routeParams.get('id');
 
-    this._RegionService.fetch(
-      () => {
-        this.title = this._RegionService.getRegion()[0]['name'];
-        this._CountryService.fetch(
-          () => {
-            this.renderMap(this._CountryService.getCountry());
-          },
-          () => {
-            console.log('error');
-          },
-          null,
-          this.id
-        );
-      },
-      () => {
-        console.log('error');
-      },
-      this.id
-    );
   }
 
   ngAfterViewInit() {

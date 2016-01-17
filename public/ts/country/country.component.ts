@@ -14,29 +14,20 @@ const colorValues: Array<string> = ['#ffffee', '#ffffff', '#f0f0ee', '#daf2e9', 
 export class CountryComponent implements OnInit {
   title: string = '';
   body:  string = 'This is the about about body';
-  countries: Country[];
+  countries: Array<Country>;
   id: string;
 
-  constructor(
-    private _router: Router,
-    private _routeParams: RouteParams,
-    private _CountryService: CountryService) {}
+  constructor(private _router: Router,
+              private _routeParams: RouteParams,
+              private _CountryService: CountryService) {
+
+    this.id = _routeParams.get('id');
+    _CountryService.getCountry().subscribe((res) => {
+      this.countries = res.json()['resp'];
+    });
+  }
 
   ngOnInit() {
-    this.id = this._routeParams.get('id');
-    this._CountryService.fetch(
-      () => {
-        let country = this._CountryService.getCountry();
-        this.title = country[0]['displayName'];
-        this.renderMap(country);
-      },
-      () => {
-        console.log('error');
-      },
-      null,
-      null,
-      this.id
-    );
   }
 
   ngAfterViewInit() {
