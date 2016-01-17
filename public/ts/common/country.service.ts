@@ -4,11 +4,15 @@ import {Observable} from 'rxjs/Rx';
 
 @Injectable()
 export class CountryService {
-  countries: Array<any>;
-
   constructor(public http: Http) {}
 
-  getCountry() {
-    return this.http.get('/api/country');
+  getCountry(regionCode?:string) {
+    let url = '/api/country';
+
+    if (regionCode) {
+      url = url + '?region=' + regionCode;
+    }
+
+    return this.http.get(url);
   }
 }

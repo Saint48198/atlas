@@ -1,8 +1,8 @@
 <h1>{{title}}</h1>
 {{body}}
 <div id="container-map"></div>
-<ul>
-  <li *ngFor="#region of regions">
-    {{name}}
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="#region of regions" (click)="onSelect(region)">
+    {{region.name}}
   </li>
 </ul>

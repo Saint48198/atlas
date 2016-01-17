@@ -20,17 +20,30 @@ export class HomeComponent implements OnInit {
 
   constructor(private _router: Router, private _RegionService: RegionService) {
     _RegionService.getRegion().subscribe((res) => {
-      this.regions = res.json()['resp'];
+      this.regions = res.json()['resp'].map(function(obj) {
+        return new Region(obj);
+      }).sort(function(a, b){
+        let nameA = a.name.toLowerCase();
+        let nameB = b.name.toLowerCase();
+
+        //sort string ascending
+        if (nameA < nameB) {
+          return -1;
+        }
+
+        if (nameA > nameB) {
+          return 1;
+        }
+
+        return 0; //default return value (no sorting)
+      });
       this.renderMap();
     });
   }
 
-  ngOnInit() {
+  ngOnInit() {}
 
-  }
-
-  ngAfterViewInit() {
-  }
+  ngAfterViewInit() {}
 
   renderMap() {
     var options = {
@@ -49,5 +62,9 @@ export class HomeComponent implements OnInit {
 
     var map = new GoogleMapComponent(options, this.regions, this._router);
     map.ngOnInit();
+  }
+
+  onSelect(region: Region) {
+    this._router.navigate( ['Region', { id: region['code'] }] );
   }
 }

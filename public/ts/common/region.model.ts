@@ -1,9 +1,10 @@
 export class Region {
+  id: number;
   name: string;
   code: string;
-
-  constructor(data:Object) {
-    this.name = data['name'];
-    this.code = data['code'];
+  constructor(regionInfo:Object) {
+    this.id = regionInfo['id'];
+    this.name = regionInfo['name'];
+    this.code = regionInfo['code'];
   }
 }

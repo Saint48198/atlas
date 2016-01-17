@@ -15,8 +15,7 @@ const colorValues: Array<string> = ['#ffffff', '#ffffee', '#f0f0ee', '#daf2e9', 
 export class RegionComponent implements OnInit {
   title: string = '';
   body:  string = 'Select a country using the map or from the list below.';
-  regions: Array<any>;
-  countries: Array<any>;
+  countries: Array<Country>;
   id: string;
   promise: Promise<Function>;
 
@@ -28,25 +27,21 @@ export class RegionComponent implements OnInit {
 
     this.id = _routeParams.get('id');
 
-    _RegionService.getRegion().toPromise().then((data) =>{
-      this.regions =  data.json()['resp'];
-      _CountryService.getCountry().subscribe((data) => {
-        this.regions = data.json()['resp'];
-        this.renderMap([{}]);
-      });
+    let regionInfo = _RegionService.getRegion(this.id);
+    let countries = _CountryService.getCountry(this.id);
+
+    regionInfo.subscribe((res) => {
+      this.title = res.json()['resp'][0]['name'];
     });
 
-  }
-
-  ngOnInit() {
 
   }
 
-  ngAfterViewInit() {
-  }
+  ngOnInit() {}
+
+  ngAfterViewInit() {}
 
   renderMap(data: Array<Object>) {
-    console.log(data);
     let options = {
       colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
       legend: 'none',

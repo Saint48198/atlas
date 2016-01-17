@@ -12,36 +12,34 @@
     {{#if ENV_DEVELOPMENT}}
       <script src="http://localhost:35729/livereload.js"></script>
     {{/if}}
-
-    <script src='http://www.google.com/jsapi'></script>
-    <script>
-        google.load('visualization', '1', {'packages': ['geochart']});
-    </script>
-
-    <script src="/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="/systemjs/dist/system.src.js"></script>
-    <script src="/rxjs/bundles/Rx.js"></script>
-    <script src="/angular2/bundles/angular2.dev.js"></script>
-    <script src="/angular2/bundles/router.dev.js"></script>
-    <script src="/angular2/bundles/http.dev.js"></script>
-
-    <!-- 2. Configure SystemJS -->
-    <script>
-        System.config({
-            packages: {
-                js: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                }
-            }
-        });
-        System.import('js/boot').then(null, console.error.bind(console));
-    </script>
 </head>
 <body>
 
 {{{body}}}
 
+  <script src='http://www.google.com/jsapi'></script>
+  <script>
+      google.load('visualization', '1', {'packages': ['geochart']});
+  </script>
 
+  <script src="/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="/systemjs/dist/system.src.js"></script>
+  <script src="/rxjs/bundles/Rx.js"></script>
+  <script src="/angular2/bundles/angular2.dev.js"></script>
+  <script src="/angular2/bundles/router.dev.js"></script>
+  <script src="/angular2/bundles/http.dev.js"></script>
+
+  <!-- 2. Configure SystemJS -->
+  <script>
+      System.config({
+          packages: {
+              js: {
+                  format: 'register',
+                  defaultExtension: 'js'
+              }
+          }
+      });
+      System.import('js/boot').then(null, console.error.bind(console));
+  </script>
 </body>
 </html>
