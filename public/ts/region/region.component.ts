@@ -28,20 +28,25 @@ export class RegionComponent implements OnInit {
     this.id = _routeParams.get('id');
 
     let regionInfo = _RegionService.getRegion(this.id);
-    let countries = _CountryService.getCountry(this.id);
+    let countriesInfo = _CountryService.getCountry(this.id);
 
     regionInfo.subscribe((res) => {
       this.title = res.json()['resp'][0]['name'];
     });
 
-
+    countriesInfo.subscribe((res) => {
+      this.countries = res.json()['resp'].map(function(obj) {
+        return new Country(obj);
+      });
+      this.renderMap();
+    });
   }
 
   ngOnInit() {}
 
   ngAfterViewInit() {}
 
-  renderMap(data: Array<Object>) {
+  renderMap() {
     let options = {
       colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
       legend: 'none',
@@ -56,7 +61,11 @@ export class RegionComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    let map = new GoogleMapComponent(options, data, this._router);
+    let map = new GoogleMapComponent(options, this.countries, this._router);
     map.ngOnInit();
+  }
+
+  onSelect(country:Country) {
+    this._router.navigate( ['Country', { id: country['code2'] }] );
   }
 }
