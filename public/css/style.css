@@ -7901,6 +7901,9 @@ a.offscreen {
     background-color: #FF3;
     border: 1px dotted #000; }
 
+p {
+  max-width: 50rem; }
+
 .navbar {
   border-radius: 0; }
 

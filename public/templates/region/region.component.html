@@ -1,8 +1,12 @@
-<h1>{{title}}</h1>
-{{body}}
-<div id="container-map"></div>
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="#country of countries" (click)="onSelect(country)">
-    {{country.displayName}}
-  </li>
-</ul>
+<section>
+  <h1>{{title}}</h1>
+  <p>{{body}}</p>
+  <div id="container-map"></div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="#country of countries" (click)="onSelect(country)">
+      {{country.displayName}}
+    </li>
+  </ul>
+</section>
+
+
