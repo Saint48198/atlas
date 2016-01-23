@@ -11,17 +11,18 @@ module.exports = function (app) {
 
 router.get('/api/wikipedia', (req, res, next) => {
   res.setHeader('Content-Type', 'application/json');
+  const queryVal = req.query.name;
+  const url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=' + queryVal;
 
-  let url = 'https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Main%20Page';
+  if (queryVal) {
+    request(url, (error, response, body) => {
+      let data = { resp: { error: error } };
 
-  request(url, (error, response, body) => {
-    let data = { resp: { error: error } };
+      if (!error && response.statusCode == 200) {
+        data.resp = JSON.parse(body);
+      }
 
-    if (!error && response.statusCode == 200) {
-      data.resp = JSON.parse(body);
-    }
-
-    res.send(JSON.stringify(data, null, 3));
-  });
-
+      res.send(JSON.stringify(data, null, 3));
+    });
+  }
 });
