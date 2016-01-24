@@ -5,9 +5,8 @@ import {Country} from '../common/country.model';
 import {CountryService} from '../common/country.service';
 import {WikipediaService} from '../common/wikipedia.service';
 
-const colorValues: Array<string> = ['#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300'];
+declare var palette:any;
 
-console.log(colorValues.length);
 @Component({
   selector: 'country',
   directives: [ROUTER_DIRECTIVES],
@@ -52,8 +51,10 @@ export class CountryComponent implements OnInit {
   }
 
   renderMap(data?: Array<Object>) {
+    const colors = ['#f6851b'];
+
     let options = {
-      colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
+      colorAxis:  {minValue: 0, maxValue: colors.length - 1,  colors: colors },
       legend: 'none',
       backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
       datalessRegionColor: '#f5f5f5',

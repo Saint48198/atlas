@@ -5,7 +5,7 @@ import {GoogleMapComponent} from '../common/google-map.component';
 import {Region} from '../common/region.model';
 import {RegionService} from '../common/region.service';
 
-const colorValues: Array<string> = ['#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300'];
+declare var palette:any;
 
 @Component({
   selector: 'home',
@@ -46,8 +46,12 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit() {}
 
   renderMap() {
-    var options = {
-      colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
+    const colors = palette('tol-sq', this.regions.length).map((color) => {
+      return '#' + color;
+    });
+
+    const options = {
+      colorAxis:  {minValue: 0, maxValue: colors.length - 1,  colors: colors },
       legend: 'none',
       backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
       datalessRegionColor: '#f5f5f5',
@@ -60,7 +64,7 @@ export class HomeComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    var map = new GoogleMapComponent(options, this.regions, this._router);
+    let map = new GoogleMapComponent(options, this.regions, this._router);
     map.ngOnInit();
   }
 

@@ -6,7 +6,7 @@ import {Country} from '../common/country.model';
 import {RegionService} from '../common/region.service';
 import {CountryService} from '../common/country.service';
 
-const colorValues: Array<string> = ['#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300', '#328A2E', '#8DCF8A', '#5AAC56', '#156711', '#034500', '#328A2E', '#146510', '#022900', '#011300'];
+declare var palette:any;
 
 @Component({
   selector: 'region',
@@ -47,8 +47,12 @@ export class RegionComponent implements OnInit {
   ngAfterViewInit() {}
 
   renderMap() {
+    const colors = palette('tol-sq', this.countries.length).map((color) => {
+      return '#' + color;
+    });
+
     let options = {
-      colorAxis:  {minValue: 0, maxValue: colorValues.length - 1,  colors: colorValues },
+      colorAxis:  {minValue: 0, maxValue: colors.length - 1,  colors: colors },
       legend: 'none',
       backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
       datalessRegionColor: '#f5f5f5',
