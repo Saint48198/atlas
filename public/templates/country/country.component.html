@@ -1,3 +1,9 @@
+<ol class="breadcrumb">
+  <li><a [routerLink]="['Home']">Home</a></li>
+  <li><a [routerLink]="['Region', {id: regionId}]">Region</a></li>
+  <li class="active">{{title}}</li>
+</ol>
+
 <section>
   <h1>{{title}}</h1>
   <p>{{body}}</p>

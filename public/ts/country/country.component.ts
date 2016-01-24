@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-import {RouteParams, Router} from 'angular2/router';
+import {RouteParams, Router, ROUTER_DIRECTIVES} from 'angular2/router';
 import {GoogleMapComponent} from '../common/google-map.component';
 import {Country} from '../common/country.model';
 import {CountryService} from '../common/country.service';
@@ -10,13 +10,15 @@ const colorValues: Array<string> = ['#328A2E', '#8DCF8A', '#5AAC56', '#156711', 
 console.log(colorValues.length);
 @Component({
   selector: 'country',
+  directives: [ROUTER_DIRECTIVES],
   templateUrl: '../../templates/country/country.component.html'
 })
 export class CountryComponent implements OnInit {
   title: string = '';
   body:  string = '';
-  countries: Array<Country>;
+  country: Country;
   id: string;
+  regionId: string;
 
   constructor(private _router: Router,
               private _routeParams: RouteParams,
@@ -25,10 +27,13 @@ export class CountryComponent implements OnInit {
 
     this.id = _routeParams.get('id');
     _CountryService.getCountry(null, this.id).subscribe((res) => {
-      this.countries = res.json()['resp'];
-      this.title = this.countries[0]['displayName'];
-      this.renderMap(this.countries);
-      this.getWikipediaData(_WikipediaService, this.countries[0]['name'])
+      let data = res.json()['resp'];
+      this.country = data[0];
+      this.title = this.country['displayName'];
+      this.regionId = this.country['region'];
+
+      this.renderMap(data);
+      this.getWikipediaData(_WikipediaService, this.country['name'])
     });
 
 
