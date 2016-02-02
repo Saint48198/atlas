@@ -1,9 +1,9 @@
-import {Component, OnInit} from 'angular2/core';
-import {Router} from 'angular2/router';
-import {NgFor} from 'angular2/common';
-import {GoogleMapComponent} from '../common/google-map.component';
-import {Region} from '../common/region.model';
-import {RegionService} from '../common/region.service';
+import {Component, OnInit}    from 'angular2/core';
+import {Router}               from 'angular2/router';
+import {NgFor}                from 'angular2/common';
+import {GoogleMapComponent}   from '../common/google-map.component';
+import {Region}               from '../common/region.model';
+import {RegionService}        from '../common/region.service';
 
 declare var palette:any;
 

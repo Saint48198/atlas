@@ -1,10 +1,10 @@
-import {Component, OnInit} from 'angular2/core';
-import {RouteParams, Router} from 'angular2/router';
-import {GoogleMapComponent} from '../common/google-map.component';
-import {Region} from '../common/region.model';
-import {Country} from '../common/country.model';
-import {RegionService} from '../common/region.service';
-import {CountryService} from '../common/country.service';
+import {Component, OnInit}    from 'angular2/core';
+import {RouteParams, Router}  from 'angular2/router';
+import {GoogleMapComponent}   from '../common/google-map.component';
+import {Region}               from '../common/region.model';
+import {Country}              from '../common/country.model';
+import {RegionService}        from '../common/region.service';
+import {CountryService}       from '../common/country.service';
 
 declare var palette:any;
 

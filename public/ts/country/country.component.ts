@@ -1,9 +1,9 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit}                      from 'angular2/core';
 import {RouteParams, Router, ROUTER_DIRECTIVES} from 'angular2/router';
-import {GoogleMapComponent} from '../common/google-map.component';
-import {Country} from '../common/country.model';
-import {CountryService} from '../common/country.service';
-import {WikipediaService} from '../common/wikipedia.service';
+import {GoogleMapComponent}                     from '../common/google-map.component';
+import {Country}                                from '../common/country.model';
+import {CountryService}                         from '../common/country.service';
+import {WikipediaService}                       from '../common/wikipedia.service';
 
 declare var palette:any;
 

@@ -1,12 +1,12 @@
-import {Component} from 'angular2/core';
+import {Component}                      from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {AboutComponent} from './about/about.component';
-import {HomeComponent} from './home/home.component';
-import {RegionComponent} from './region/region.component';
-import {CountryComponent} from './country/country.component';
-import {RegionService} from './common/region.service';
-import {CountryService} from './common/country.service';
-import {WikipediaService} from './common/wikipedia.service';
+import {AboutComponent}                 from './about/about.component';
+import {HomeComponent}                  from './home/home.component';
+import {RegionComponent}                from './region/region.component';
+import {CountryComponent}               from './country/country.component';
+import {RegionService}                  from './common/region.service';
+import {CountryService}                 from './common/country.service';
+import {WikipediaService}               from './common/wikipedia.service';
 
 @Component({
   selector: 'app',

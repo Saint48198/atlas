@@ -9,3 +9,4 @@ bin/
 *.js.map
 .baseDir.ts
 public/ts/*.js
+.otto
