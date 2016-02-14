@@ -6,15 +6,15 @@ import {Observable}     from 'rxjs/Rx';
 export class CountryService {
   constructor(public http: Http) {}
 
-  getCountry(regionCode?:string, countryCode?:string) {
+  getCountry(regionCode?:string, countryCode?:string, countryQuery?:string) {
     let url = '/api/country';
 
     if (regionCode) {
       url = url + '?region=' + regionCode;
-    }
-
-    if (countryCode) {
+    } else if (countryCode) {
       url = url + '?code=' + countryCode;
+    } else if (countryQuery) {
+      url = url + '?query=' + countryQuery
     }
 
     return this.http.get(url);

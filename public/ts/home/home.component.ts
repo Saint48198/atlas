@@ -13,7 +13,7 @@ declare var palette:any;
   providers: [RegionService],
   templateUrl: '../../templates/home/home.component.html',
   bindings: [RegionService],
-  directives: [GoogleMapComponent]
+  directives: [GoogleMapComponent, CountrySearchComponent]
 })
 export class HomeComponent {
   title:string = 'Atlas';
@@ -58,11 +58,9 @@ export class HomeComponent {
     });
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  ngAfterViewInit() {
-  }
+  ngAfterViewInit() {}
 
   onSelect(region:Region) {
     this._router.navigate(['Region', {id: region['code']}]);

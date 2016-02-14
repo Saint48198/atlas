@@ -1,7 +1,9 @@
-var express = require('express'),
-    router = express.Router(),
-    mongoose = require('mongoose'),
-    Country = mongoose.model('Country');
+var express  = require('express');
+var _        = require('lodash');
+var mongoose = require('mongoose');
+var router   = express.Router();
+var Country  = mongoose.model('Country');
+
 
 module.exports = function (app, atlasDb) {
   app.use('/', router);
@@ -16,10 +18,13 @@ router.get('/api/country', function (req, res, next) {
   var json = { resp: [] };
   res.setHeader('Content-Type', 'application/json');
 
-  if (id !== undefined || region !== undefined || code !== undefined) {
-    if (id !== undefined) {
+
+  console.log();
+
+  if (!_.isUndefined(id) || !_.isUndefined(region) || !_.isUndefined(code)) {
+    if (!_.isUndefined(id)) {
       queryValue.id = id;
-    } else if(region !== undefined) {
+    } else if(!_.isUndefined(region)) {
       queryValue.region = region;
     } else {
       queryValue.code2 = code;
@@ -33,7 +38,7 @@ router.get('/api/country', function (req, res, next) {
       }
       res.send(JSON.stringify(json, null, 3));
     });
-  } else if (query !== undefined) {
+  } else if (!_.isUndefined(query)) {
     Country.find({ name: new RegExp('^' + query, "i") }, function (err, countries) {
       if (!err) {
         json.resp = countries;
@@ -52,6 +57,4 @@ router.get('/api/country', function (req, res, next) {
       res.send(JSON.stringify(json, null, 3));
     });
   }
-
-
 });
