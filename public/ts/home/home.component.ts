@@ -1,9 +1,10 @@
-import {Component, OnInit}    from 'angular2/core';
-import {Router}               from 'angular2/router';
-import {NgFor}                from 'angular2/common';
-import {GoogleMapComponent}   from '../common/google-map.component';
-import {Region}               from '../common/region.model';
-import {RegionService}        from '../common/region.service';
+import {Component, OnInit}      from 'angular2/core';
+import {Router}                 from 'angular2/router';
+import {NgFor}                  from 'angular2/common';
+import {GoogleMapComponent}     from '../common/google-map.component';
+import {CountrySearchComponent} from '../common/country-search.component'
+import {Region}                 from '../common/region.model';
+import {RegionService}          from '../common/region.service';
 
 declare var palette:any;
 
@@ -11,18 +12,35 @@ declare var palette:any;
   selector: 'home',
   providers: [RegionService],
   templateUrl: '../../templates/home/home.component.html',
-  bindings: [RegionService]
+  bindings: [RegionService],
+  directives: [GoogleMapComponent]
 })
-export class HomeComponent implements OnInit {
-  title: string = 'Atlas';
-  body:  string = 'Welcome to Atlas, the place you learn about the world.';
-  regions: Array<Region>;
+export class HomeComponent {
+  title:string = 'Atlas';
+  body:string = 'Welcome to Atlas, the place you learn about the world.';
+  regions:Array<Region> = [];
+  mapOptions:Object = {};
 
-  constructor(private _router: Router, private _RegionService: RegionService) {
+  constructor(private _router:Router, private _RegionService:RegionService) {
+    this.mapOptions = {
+      colorAxis: {minValue: 0, maxValue: 0, colors: []},
+      legend: 'none',
+      backgroundColor: {fill: '#FFFFFF', stroke: '#FFFFFF', strokeWidth: 0},
+      datalessRegionColor: '#f5f5f5',
+      displayMode: 'regions',
+      enableRegionInteractivity: 'true',
+      resolution: 'subcontinents',
+      sizeAxis: {minValue: 1, maxValue: 1, minSize: 10, maxSize: 10},
+      region: 'world',
+      keepAspectRatio: true,
+      tooltip: {textStyle: {color: '#444444'}, trigger: 'focus', isHtml: false}
+    };
+
+
     _RegionService.getRegion().subscribe((res) => {
-      this.regions = res.json()['resp'].map(function(obj) {
+      this.regions = res.json()['resp'].map(function (obj) {
         return new Region(obj);
-      }).sort(function(a, b){
+      }).sort(function (a, b) {
         let nameA = a.name.toLowerCase();
         let nameB = b.name.toLowerCase();
 
@@ -37,38 +55,16 @@ export class HomeComponent implements OnInit {
 
         return 0; //default return value (no sorting)
       });
-      this.renderMap();
     });
   }
 
-  ngOnInit() {}
-
-  ngAfterViewInit() {}
-
-  renderMap() {
-    const colors = palette('tol-sq', this.regions.length).map((color) => {
-      return '#' + color;
-    });
-
-    const options = {
-      colorAxis:  {minValue: 0, maxValue: colors.length - 1,  colors: colors },
-      legend: 'none',
-      backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
-      datalessRegionColor: '#f5f5f5',
-      displayMode: 'regions',
-      enableRegionInteractivity: 'true',
-      resolution: 'subcontinents',
-      sizeAxis: {minValue: 1, maxValue:1,minSize:10,  maxSize: 10},
-      region:'world',
-      keepAspectRatio: true,
-      tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
-    };
-
-    let map = new GoogleMapComponent(options, this.regions, this._router);
-    map.ngOnInit();
+  ngOnInit() {
   }
 
-  onSelect(region: Region) {
-    this._router.navigate( ['Region', { id: region['code'] }] );
+  ngAfterViewInit() {
+  }
+
+  onSelect(region:Region) {
+    this._router.navigate(['Region', {id: region['code']}]);
   }
 }

@@ -10,14 +10,17 @@ declare var palette:any;
 
 @Component({
   selector: 'region',
-  templateUrl: '../../templates/region/region.component.html'
+  providers: [RegionService, CountryService],
+  templateUrl: '../../templates/region/region.component.html',
+  bindings: [RegionService, CountryService],
+  directives: [GoogleMapComponent]
 })
 export class RegionComponent implements OnInit {
   title: string = '';
   body:  string = 'Select a country using the map or from the list below.';
-  countries: Array<Country>;
+  countries: Array<Country> = [];
   id: string;
-  promise: Promise<Function>;
+  mapOptions:Object = {};
 
   constructor(private _router: Router,
               private _routeParams: RouteParams,
@@ -27,32 +30,8 @@ export class RegionComponent implements OnInit {
 
     this.id = _routeParams.get('id');
 
-    let regionInfo = _RegionService.getRegion(this.id);
-    let countriesInfo = _CountryService.getCountry(this.id);
-
-    regionInfo.subscribe((res) => {
-      this.title = res.json()['resp'][0]['name'];
-    });
-
-    countriesInfo.subscribe((res) => {
-      this.countries = res.json()['resp'].map(function(obj) {
-        return new Country(obj);
-      });
-      this.renderMap();
-    });
-  }
-
-  ngOnInit() {}
-
-  ngAfterViewInit() {}
-
-  renderMap() {
-    const colors = palette('tol-sq', this.countries.length).map((color) => {
-      return '#' + color;
-    });
-
-    let options = {
-      colorAxis:  {minValue: 0, maxValue: colors.length - 1,  colors: colors },
+    this.mapOptions = {
+      colorAxis:  {minValue: 0, maxValue: 0,  colors: [] },
       legend: 'none',
       backgroundColor: {fill:'#FFFFFF',stroke:'#FFFFFF' ,strokeWidth:0 },
       datalessRegionColor: '#f5f5f5',
@@ -65,9 +44,23 @@ export class RegionComponent implements OnInit {
       tooltip: {textStyle: {color: '#444444'}, trigger:'focus', isHtml: false}
     };
 
-    let map = new GoogleMapComponent(options, this.countries, this._router);
-    map.ngOnInit();
+    const regionInfo = _RegionService.getRegion(this.id);
+    const countriesInfo = _CountryService.getCountry(this.id);
+
+    regionInfo.subscribe((res) => {
+      this.title = res.json()['resp'][0]['name'];
+    });
+
+    countriesInfo.subscribe((res) => {
+      this.countries = res.json()['resp'].map(function(obj) {
+        return new Country(obj);
+      });
+    });
   }
+
+  ngOnInit() {}
+
+  ngAfterViewInit() {}
 
   onSelect(country:Country) {
     this._router.navigate( ['Country', { id: country['code2'] }] );
