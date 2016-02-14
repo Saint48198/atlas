@@ -4,8 +4,6 @@
   <countrySearch></countrySearch>
   <google-map [data]="regions" [options]="mapOptions"></google-map>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="#region of regions" (click)="onSelect(region)">
-      {{region.name }}
-    </li>
+    <li class="list-group-item" *ngFor="#region of regions" (click)="onSelect(region)" [innerHTML]="region.name"></li>
   </ul>
 </section>

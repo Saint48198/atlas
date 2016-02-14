@@ -9,9 +9,7 @@
   </fieldset>
   <div class="conatiner-searchReults">
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="#country of countries" (click)="onSelect(country)">
-        {{country.displayName}}
-      </li>
+      <li class="list-group-item" *ngFor="#country of countries" (click)="onSelect(country)" [innerHTML]="country.displayName"></li>
     </ul>
   </div>
 </form>
