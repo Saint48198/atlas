@@ -62,7 +62,7 @@ export class CountryComponent implements OnInit {
 
   getWikipediaData(service: WikipediaService, query: string) {
     service.getData(query).subscribe((res) => {
-      this.body = res.json()['resp'][2][0];
+      this.body = res.json()['resp'];
     });
   }
 }

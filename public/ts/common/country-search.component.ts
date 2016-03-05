@@ -22,7 +22,7 @@ export class CountrySearchComponent implements OnInit {
 
   ngOnInit() {}
 
-  findCountries(query: String) {
+  findCountries(query: string) {
     const countriesInfo = this._CountryService.getCountry(null, null, query);
 
     clearTimeout(this.action);
