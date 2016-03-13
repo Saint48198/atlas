@@ -10,3 +10,4 @@ bin/
 .baseDir.ts
 public/ts/*.js
 .otto
+*.txt
