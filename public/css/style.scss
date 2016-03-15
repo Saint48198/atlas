@@ -29,3 +29,10 @@ p {
 .navbar {
   border-radius: 0;
 }
+
+.list-group-item:nth-child(even) {
+  background-color: #fdfcf4;
+  &:hover, &:focus {
+    background-color: #f5f5f5;
+  }
+}
