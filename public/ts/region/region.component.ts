@@ -62,7 +62,8 @@ export class RegionComponent implements OnInit {
 
   ngAfterViewInit() {}
 
-  onSelect(country:Country) {
+  onSelect(event:Event, country:Country) {
+    event.preventDefault();
     this._router.navigate( ['Country', { id: country['code2'] }] );
   }
 }

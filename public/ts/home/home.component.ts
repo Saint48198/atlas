@@ -62,7 +62,8 @@ export class HomeComponent {
 
   ngAfterViewInit() {}
 
-  onSelect(region:Region) {
+  onSelect(event:Event, region:Region) {
+    event.preventDefault();
     this._router.navigate(['Region', {id: region['code']}]);
   }
 }

@@ -3,7 +3,7 @@
   <p>{{body}}</p>
   <countrySearch></countrySearch>
   <google-map [data]="regions" [options]="mapOptions"></google-map>
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="#region of regions" (click)="onSelect(region)" [innerHTML]="region.name"></li>
-  </ul>
+  <div class="list-group">
+    <a href="#" class="list-group-item" *ngFor="#region of regions" (click)="onSelect($event, region)" [innerHTML]="region.name"></a>
+  </div>
 </section>
