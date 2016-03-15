@@ -11,3 +11,4 @@ bin/
 public/ts/*.js
 .otto
 *.txt
+*.css
