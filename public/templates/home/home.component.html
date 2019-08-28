@@ -1,9 +1,0 @@
-<section>
-  <h1>{{title}}</h1>
-  <p>{{body}}</p>
-  <countrySearch></countrySearch>
-  <google-map [data]="regions" [options]="mapOptions"></google-map>
-  <div class="list-group">
-    <a href="#" class="list-group-item" *ngFor="#region of regions" (click)="onSelect($event, region)" [innerHTML]="region.name"></a>
-  </div>
-</section>
