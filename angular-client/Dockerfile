@@ -1,3 +1,4 @@
+@@ -1,36 +0,0 @@
 # Create image based on the official Node 10 image from dockerhub
 FROM nginx:alpine
 RUN apk update && apk upgrade
